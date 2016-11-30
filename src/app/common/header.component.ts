@@ -39,28 +39,28 @@ import { AppService } from "../app.service";
                 </li>
                 <li><a href="#" class="mainNav">SERVICES</a>
                     <ul>
-                        <li><a href="tmj.php" class="secondnav">TMJ - Adults</a></li>
-                        <li><a href="tmj-treatment-children.php" class="secondnav">TMJ  - Children</a></li>
-                        <li><a href="sleep-disorders.php" class="secondnav">Sleep Disorders - Adults</a></li>
-                        <li><a href="sleep-disorders-children.php" class="secondnav">Sleep Disorders - Children</a></li>
-                        <li><a href="craniofacial.php" class="secondnav">Craniofacial pain</a></li>
-                        <li><a href="facial-pain.php" class="secondnav">Facial Pain</a></li>
-                        <li><a href="neck-jaw.php" class="secondnav">Neck & Jaw Pain</a></li>
-                        <li><a href="orthodontics.php" class="secondnav">Complex Orthodontics</a></li>
+                        <li><a routerLink="/tmj" class="secondnav">TMJ - Adults</a></li>
+                        <li><a routerLink="/tmj-treatment-children" class="secondnav">TMJ  - Children</a></li>
+                        <li><a routerLink="/sleep-disorders" class="secondnav">Sleep Disorders - Adults</a></li>
+                        <li><a routerLink="/sleep-disorders-children" class="secondnav">Sleep Disorders - Children</a></li>
+                        <li><a routerLink="/craniofacial" class="secondnav">Craniofacial pain</a></li>
+                        <li><a routerLink="/facial-pain" class="secondnav">Facial Pain</a></li>
+                        <li><a routerLink="/neck-jaw" class="secondnav">Neck & Jaw Pain</a></li>
+                        <li><a routerLink="/orthodontics" class="secondnav">Complex Orthodontics</a></li>
                     </ul>
                 </li>
                 <li><a href="#" class="mainNav">EDUCATION</a>
                     <ul>
-                        <li><a href="tmj-symptoms.php" class="secondnav">TMJ & TMD</a></li>
+                        <li><a href="/tmj-symptoms" class="secondnav">TMJ & TMD</a></li>
 
-                        <li><a href="sleep-apnea.php" class="secondnav">Sleep Disorders</a></li>
+                        <li><a href="/sleep-apnea" class="secondnav">Sleep Disorders</a></li>
                     </ul>
                 </li>
 
-                <li><a href="testimonials.php" class="mainNav">PATIENT TESTIMONIALS</a></li>
-                <li><a href="locations.php" class="mainNav">LOCATIONS</a></li>
-                <li><a href="referral-form.php" class="mainNav">REFERRAL FORM</a></li>
-                <li><a href="contact.php" class="mainNav">CONTACT</a></li>
+                <li><a href="/testimonials" class="mainNav">PATIENT TESTIMONIALS</a></li>
+                <li><a href="/locations" class="mainNav">LOCATIONS</a></li>
+                <li><a href="/referral-form" class="mainNav">REFERRAL FORM</a></li>
+                <li><a href="/contact" class="mainNav">CONTACT</a></li>
             </ul>
         </nav>
 
@@ -95,52 +95,52 @@ import { AppService } from "../app.service";
                     </a>
 
                     <div id="navdrop3" style="display: none;">
-                        <a href="tmj.php">
-                        <div class="mobnavconbot2">
-                            TMJ - Adults
-                        </div>
+                        <a href="/tmj">
+                            <div class="mobnavconbot2">
+                                TMJ - Adults
+                            </div>
                         </a>
 
-                        <a href="tmj-treatment-children.php">
-                        <div class="mobnavconbot2">
-                            TMJ - Children
-                        </div>
+                        <a href="/tmj-treatment-children">
+                            <div class="mobnavconbot2">
+                                TMJ - Children
+                            </div>
                         </a>
 
-                        <a href="sleep-disorders.php">
-                        <div class="mobnavconbot2">
-                            Sleep Disorders - Adults
-                        </div>
+                        <a href="/sleep-disorders">
+                            <div class="mobnavconbot2">
+                                Sleep Disorders - Adults
+                            </div>
                         </a>
 
-                        <a href="sleep-disorders-children.php">
-                        <div class="mobnavconbot2">
-                            Sleep Disorders - Children
-                        </div>
+                        <a href="/sleep-disorders-children">
+                            <div class="mobnavconbot2">
+                                Sleep Disorders - Children
+                            </div>
                         </a>
 
-                        <a href="craniofacial.php">
-                        <div class="mobnavconbot2">
-                            Craniofacial Pain
-                        </div>
+                        <a href="/craniofacial">
+                            <div class="mobnavconbot2">
+                                Craniofacial Pain
+                            </div>
                         </a>
 
-                        <a href="facial-pain.php">
-                        <div class="mobnavconbot2">
-                            Facial Pain
-                        </div>
+                        <a href="/facial-pain">
+                            <div class="mobnavconbot2">
+                                Facial Pain
+                            </div>
                         </a>
 
-                        <a href="neck-jaw.php">
-                        <div class="mobnavconbot2">
-                            Neck & Jaw Pain
-                        </div>
+                        <a href="/neck-jaw">
+                            <div class="mobnavconbot2">
+                                Neck & Jaw Pain
+                            </div>
                         </a>
 
-                        <a href="orthodontics.php">
-                        <div class="mobnavconbot2">
-                            Complex Orthodontics
-                        </div>
+                        <a href="/orthodontics">
+                            <div class="mobnavconbot2">
+                                Complex Orthodontics
+                            </div>
                         </a>
                     </div>
 
@@ -151,38 +151,38 @@ import { AppService } from "../app.service";
                     </a>
 
                     <div id="navdrop4" style="display: none;">
-                        <a href="tmj.php">
-                        <div class="mobnavconbot2">
-                            TMJ &amp; TMD
-                        </div>
+                        <a href="/tmj">
+                            <div class="mobnavconbot2">
+                                TMJ &amp; TMD
+                            </div>
                         </a>
 
-                        <a href="sleep-apnea.php">
-                        <div class="mobnavconbot2">
-                            Sleep Disorders
-                        </div>
+                        <a href="/sleep-apnea">
+                            <div class="mobnavconbot2">
+                                Sleep Disorders
+                            </div>
                         </a>
                     </div>
 
-                    <a href="testimonials.php">
+                    <a href="/testimonials">
                         <div class="mobnavconbot">
                             PATIENT TESTIMONIALS
                         </div>
                     </a>
 
-                    <a href="locations.php">
+                    <a href="/locations">
                         <div class="mobnavconbot">
                             LOCATIONS
                         </div>
                     </a>
 
-                    <a href="referral-form.php">
+                    <a href="/referral-form">
                         <div class="mobnavconbot">
                             REFERRAL FORM
                         </div>
                     </a>
 
-                    <a href="contact.php">
+                    <a href="/contact">
                         <div class="mobnavconbot">
                             CONTACT
                         </div>
