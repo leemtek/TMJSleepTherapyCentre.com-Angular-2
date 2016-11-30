@@ -34,8 +34,8 @@ import { AppService } from "../app.service";
 
         <nav>
             <ul>
-                <li><a href="index.php" class="mainNav">HOME</a></li>
-                <li><a href="meet-dr.php" class="mainNav">MEET DR. ALKHOURY</a>
+                <li><a routerLink="/" class="mainNav">HOME</a></li>
+                <li><a routerLink="/meet-dr" class="mainNav">MEET DR. ALKHOURY</a>
                 </li>
                 <li><a href="#" class="mainNav">SERVICES</a>
                     <ul>
@@ -76,13 +76,13 @@ import { AppService } from "../app.service";
                 </a>
 
                 <div id="navdrop" style="display: none;">
-                    <a href="index.php">
+                    <a routerLink="/">
                         <div class="mobnavconbot">
                             HOME
                         </div>
                     </a>
 
-                    <a href="meet-dr.php">
+                    <a routerLink="/meet-dr">
                         <div class="mobnavconbot" onClick="togglediv('navdrop2')">
                             MEET DR. ALKHOURY
                         </div>
