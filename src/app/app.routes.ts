@@ -1,5 +1,11 @@
+// Main Pages
 import { HomeComponent } from "./pages/home.component";
 import { MeetDrComponent } from "./pages/meet-dr.component";
+import { TestimonialsComponent } from "./pages/testimonials.component";
+import { LocationsComponent } from "./pages/locations.component";
+import { ReferralFormComponent } from "./pages/referral-form.component";
+import { OnlineReferralComponent } from "./pages/online-referral.component";
+import { ContactComponent } from "./pages/contact.component";
 
 // Pages: Services
 import { TmjComponent } from "./pages/services/tmj.component";
@@ -18,9 +24,12 @@ import { SleepApneaComponent } from "./pages/education/sleep-apnea.component";
 export const AppRoutes: any = [
     // Homepage
     { path: "", component: HomeComponent },
-
-    // Meet the Dr.
     { path: "meet-dr", component: MeetDrComponent },
+    { path: "testimonials", component: TestimonialsComponent },
+    { path: "locations", component: LocationsComponent },
+    { path: "referral-form", component: ReferralFormComponent },
+    { path: "online-referral", component: OnlineReferralComponent },
+    { path: "contact", component: ContactComponent },
 
     // Services
     { path: "tmj", component: TmjComponent },

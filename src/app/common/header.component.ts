@@ -17,10 +17,10 @@ import { AppService } from "../app.service";
             <div class="headerPlacer">
                 <div class="restrict">
                     <div class="head-btns">
-                        <a href="tmj.php"><img src="{{ strImages }}/btn-1.png"></a>
-                        <a href="sleep-disorders.php"><img src="{{ strImages }}/btn-2.png"></a>
-                        <a href="new-patients.php"><img src="{{ strImages }}/btn-3.png"></a>
-                        <a href="appointment.php"><img src="{{ strImages }}/btn-4.png"></a>
+                        <a routerLink="/tmj"><img src="{{ strImages }}/btn-1.png"></a>
+                        <a routerLink="/sleep-disorders"><img src="{{ strImages }}/btn-2.png"></a>
+                        <a routerLink="/new-patients"><img src="{{ strImages }}/btn-3.png"></a>
+                        <a routerLink="/appointment"><img src="{{ strImages }}/btn-4.png"></a>
                     </div>
 
                     <div class="cycle-slideshow">
@@ -37,7 +37,7 @@ import { AppService } from "../app.service";
                 <li><a routerLink="/" class="mainNav">HOME</a></li>
                 <li><a routerLink="/meet-dr" class="mainNav">MEET DR. ALKHOURY</a>
                 </li>
-                <li><a href="#" class="mainNav">SERVICES</a>
+                <li><a class="mainNav">SERVICES</a>
                     <ul>
                         <li><a routerLink="/tmj" class="secondnav">TMJ - Adults</a></li>
                         <li><a routerLink="/tmj-treatment-children" class="secondnav">TMJ  - Children</a></li>
@@ -49,18 +49,18 @@ import { AppService } from "../app.service";
                         <li><a routerLink="/orthodontics" class="secondnav">Complex Orthodontics</a></li>
                     </ul>
                 </li>
-                <li><a href="#" class="mainNav">EDUCATION</a>
+                <li><a class="mainNav">EDUCATION</a>
                     <ul>
-                        <li><a href="/tmj-symptoms" class="secondnav">TMJ & TMD</a></li>
+                        <li><a routerLink="/tmj-symptoms" class="secondnav">TMJ & TMD</a></li>
 
-                        <li><a href="/sleep-apnea" class="secondnav">Sleep Disorders</a></li>
+                        <li><a routerLink="/sleep-apnea" class="secondnav">Sleep Disorders</a></li>
                     </ul>
                 </li>
 
-                <li><a href="/testimonials" class="mainNav">PATIENT TESTIMONIALS</a></li>
-                <li><a href="/locations" class="mainNav">LOCATIONS</a></li>
-                <li><a href="/referral-form" class="mainNav">REFERRAL FORM</a></li>
-                <li><a href="/contact" class="mainNav">CONTACT</a></li>
+                <li><a routerLink="/testimonials" class="mainNav">PATIENT TESTIMONIALS</a></li>
+                <li><a routerLink="/locations" class="mainNav">LOCATIONS</a></li>
+                <li><a routerLink="/referral-form" class="mainNav">REFERRAL FORM</a></li>
+                <li><a routerLink="/contact" class="mainNav">CONTACT</a></li>
             </ul>
         </nav>
 
@@ -69,10 +69,10 @@ import { AppService } from "../app.service";
         ======================================================== -->
         <div id="mobnav">
             <div class="mobnavcon">
-                <a href="#">
-                <div id="mobnavcontop" onClick="togglediv('navdrop')">
-                    MENU
-                </div>
+                <a>
+                    <div id="mobnavcontop" onClick="togglediv('navdrop')">
+                        MENU
+                    </div>
                 </a>
 
                 <div id="navdrop" style="display: none;">
@@ -88,101 +88,101 @@ import { AppService } from "../app.service";
                         </div>
                     </a>
 
-                    <a href="#">
+                    <a>
                         <div class="mobnavconbot" onClick="togglediv('navdrop3')">
                             SERVICES
                         </div>
                     </a>
 
                     <div id="navdrop3" style="display: none;">
-                        <a href="/tmj">
+                        <a routerLink="/tmj">
                             <div class="mobnavconbot2">
                                 TMJ - Adults
                             </div>
                         </a>
 
-                        <a href="/tmj-treatment-children">
+                        <a routerLink="/tmj-treatment-children">
                             <div class="mobnavconbot2">
                                 TMJ - Children
                             </div>
                         </a>
 
-                        <a href="/sleep-disorders">
+                        <a routerLink="/sleep-disorders">
                             <div class="mobnavconbot2">
                                 Sleep Disorders - Adults
                             </div>
                         </a>
 
-                        <a href="/sleep-disorders-children">
+                        <a routerLink="/sleep-disorders-children">
                             <div class="mobnavconbot2">
                                 Sleep Disorders - Children
                             </div>
                         </a>
 
-                        <a href="/craniofacial">
+                        <a routerLink="/craniofacial">
                             <div class="mobnavconbot2">
                                 Craniofacial Pain
                             </div>
                         </a>
 
-                        <a href="/facial-pain">
+                        <a routerLink="/facial-pain">
                             <div class="mobnavconbot2">
                                 Facial Pain
                             </div>
                         </a>
 
-                        <a href="/neck-jaw">
+                        <a routerLink="/neck-jaw">
                             <div class="mobnavconbot2">
                                 Neck & Jaw Pain
                             </div>
                         </a>
 
-                        <a href="/orthodontics">
+                        <a routerLink="/orthodontics">
                             <div class="mobnavconbot2">
                                 Complex Orthodontics
                             </div>
                         </a>
                     </div>
 
-                    <a href="#">
+                    <a>
                         <div class="mobnavconbot" onClick="togglediv('navdrop4')">
                             EDUCATION
                         </div>
                     </a>
 
                     <div id="navdrop4" style="display: none;">
-                        <a href="/tmj">
+                        <a routerLink="/tmj">
                             <div class="mobnavconbot2">
                                 TMJ &amp; TMD
                             </div>
                         </a>
 
-                        <a href="/sleep-apnea">
+                        <a routerLink="/sleep-apnea">
                             <div class="mobnavconbot2">
                                 Sleep Disorders
                             </div>
                         </a>
                     </div>
 
-                    <a href="/testimonials">
+                    <a routerLink="/testimonials">
                         <div class="mobnavconbot">
                             PATIENT TESTIMONIALS
                         </div>
                     </a>
 
-                    <a href="/locations">
+                    <a routerLink="/locations">
                         <div class="mobnavconbot">
                             LOCATIONS
                         </div>
                     </a>
 
-                    <a href="/referral-form">
+                    <a routerLink="/referral-form">
                         <div class="mobnavconbot">
                             REFERRAL FORM
                         </div>
                     </a>
 
-                    <a href="/contact">
+                    <a routerLink="/contact">
                         <div class="mobnavconbot">
                             CONTACT
                         </div>

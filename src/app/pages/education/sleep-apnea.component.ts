@@ -11,9 +11,9 @@ import { AppService } from "../../app.service";
                         <div class="tmjMedia">
                             <img src="{{ strImages }}/sleep-disorder-sublink-buttons.png" alt="tmj causes and symptoms" width="251" height="156" usemap="#Map4Map" />
                             <map name="Map4Map">
-                                <area shape="rect" coords="2,3,245,47" href="#causes">
-                                <area shape="rect" coords="3,51,245,97" href="#symptoms">
-                                <area shape="rect" coords="2,102,244,147" href="#treatment">
+                                <area shape="rect" coords="2,3,245,47" onclick="document.getElementById('causes').scrollIntoView();">
+                                <area shape="rect" coords="3,51,245,97" onclick="document.getElementById('symptoms').scrollIntoView();">
+                                <area shape="rect" coords="2,102,244,147" onclick="document.getElementById('treatment').scrollIntoView();">
                             </map>
                         </div>
                         

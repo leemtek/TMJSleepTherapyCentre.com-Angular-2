@@ -14,6 +14,11 @@ import { FooterComponent } from "./common/footer.component";
 import { AppComponent } from './app.component';
 import { HomeComponent } from "./pages/home.component";
 import { MeetDrComponent } from "./pages/meet-dr.component";
+import { TestimonialsComponent } from "./pages/testimonials.component";
+import { LocationsComponent } from "./pages/locations.component";
+import { ReferralFormComponent } from "./pages/referral-form.component";
+import { OnlineReferralComponent } from "./pages/online-referral.component";
+import { ContactComponent } from "./pages/contact.component";
 
 // Pages: Services
 import { TmjComponent } from "./pages/services/tmj.component";
@@ -38,6 +43,11 @@ import { SleepApneaComponent } from "./pages/education/sleep-apnea.component";
     AppComponent,
     HomeComponent,
     MeetDrComponent,
+    TestimonialsComponent,
+    LocationsComponent,
+    ReferralFormComponent,
+    OnlineReferralComponent,
+    ContactComponent,
 
     // Services
     TmjComponent,

@@ -23,17 +23,17 @@ import { AppService } from "../app.service";
                         </p>
 
                         <div class="col g12">
-                            <a href="tmj.php">
+                            <a routerLink="/tmj">
                                 <img src="{{ strImages }}/btn-1.png" alt="Button Images" class="buttonSizer ">
                             </a>
-                            <a href="sleep-disorders.php">
+                            <a routerLink="/sleep-disorders">
                                 <img src="{{ strImages }}/btn-2.png" alt="Button Images" class="buttonSizer ">
                             </a>
                             <br />
-                            <a href="new-patients.php">
+                            <a routerLink="new-patients">
                                 <img src="{{ strImages }}/btn-3.png" alt="Button Images" class="buttonSizer">
                             </a>
-                            <a href="appointment.php">
+                            <a routerLink="appointment">
                                 <img src="{{ strImages }}/btn-4.png" alt="Button Images" class="buttonSizer ">
                             </a>
                         </div>
