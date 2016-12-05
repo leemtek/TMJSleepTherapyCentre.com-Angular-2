@@ -4,8 +4,12 @@ import { MeetDrComponent } from "./pages/meet-dr.component";
 import { TestimonialsComponent } from "./pages/testimonials.component";
 import { LocationsComponent } from "./pages/locations.component";
 import { ReferralFormComponent } from "./pages/referral-form.component";
-import { OnlineReferralComponent } from "./pages/online-referral.component";
 import { ContactComponent } from "./pages/contact.component";
+import { NewPatientsComponent } from "./pages/new-patients.component";
+
+// Forms
+import { OnlineReferralComponent } from "./forms/online-referral.component";
+import { AppointmentComponent } from "./forms/appointment.component";
 
 // Pages: Services
 import { TmjComponent } from "./pages/services/tmj.component";
@@ -28,8 +32,12 @@ export const AppRoutes: any = [
     { path: "testimonials", component: TestimonialsComponent },
     { path: "locations", component: LocationsComponent },
     { path: "referral-form", component: ReferralFormComponent },
-    { path: "online-referral", component: OnlineReferralComponent },
     { path: "contact", component: ContactComponent },
+    { path: "new-patients", component: NewPatientsComponent },
+
+    // Forms
+    { path: "online-referral", component: OnlineReferralComponent },
+    { path: "appointment", component: AppointmentComponent },
 
     // Services
     { path: "tmj", component: TmjComponent },
