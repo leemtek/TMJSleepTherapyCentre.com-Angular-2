@@ -63,7 +63,7 @@ import { constObjConfig } from "../shared/config";
                         <h3>Dr. James Gregory's Story</h3>
                         
                         <div class="vidCon">
-                            <video class="homeVideo" controls preload="metadata" poster="images/joyce-poster.jpg">
+                            <video class="homeVideo" controls preload="metadata" poster="{{ strAssetLocation }}/images/joyce-poster.jpg">
                                 <source src="{{ strAssetLocation }}/videos/Joyce.mp4" type="video/mp4">
                                 <source src="{{ strAssetLocation }}/videos/Joyce.webm" type="video/webm">
                                 <source src="{{ strAssetLocation }}/videos/Joyce.ogv" type="video/ogg">
@@ -73,7 +73,7 @@ import { constObjConfig } from "../shared/config";
                         <h3>Joyce's Story</h3>
                                             
                         <div class="vidCon">
-                            <video class="homeVideo" controls preload="metadata" poster="images/mayrose-poster.jpg">
+                            <video class="homeVideo" controls preload="metadata" poster="{{ strAssetLocation }}/images/mayrose-poster.jpg">
                                 <source src="{{ strAssetLocation }}/videos/Mayrose.mp4" type="video/mp4">
                                 <source src="{{ strAssetLocation }}/videos/Mayrose.webm" type="video/webm">
                                 <source src="{{ strAssetLocation }}/videos/Mayrose.ogv" type="video/ogg">
@@ -83,7 +83,7 @@ import { constObjConfig } from "../shared/config";
                         <h3>Mayrose's Story</h3>
                                             
                         <div class="vidCon">
-                            <video class="homeVideo" controls preload="metadata" poster="images/rabi-dovbe-poster.jpg">
+                            <video class="homeVideo" controls preload="metadata" poster="{{ strAssetLocation }}/images/rabi-dovbe-poster.jpg">
                                 <source src="{{ strAssetLocation }}/videos/Rabi-Dovbe.mp4" type="video/mp4">
                                 <source src="{{ strAssetLocation }}/videos/Rabi-Dovbe.webm" type="video/webm">
                                 <source src="{{ strAssetLocation }}/videos/Rabi-Dovbe.ogv" type="video/ogg">
@@ -93,7 +93,7 @@ import { constObjConfig } from "../shared/config";
                         <h3>Rabi Dovbe's Story</h3>
                                             
                         <div class="vidCon">
-                            <video class="homeVideo" controls preload="metadata" poster="images/chan-poster.jpg">
+                            <video class="homeVideo" controls preload="metadata" poster="{{ strAssetLocation }}/images/chan-poster.jpg">
                                 <source src="{{ strAssetLocation }}/videos/Chan.mp4" type="video/mp4">
                                 <source src="{{ strAssetLocation }}/videos/Chan.webm" type="video/webm">
                                 <source src="{{ strAssetLocation }}/videos/Chan.ogv" type="video/ogg">
