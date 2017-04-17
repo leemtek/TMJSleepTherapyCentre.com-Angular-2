@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppService } from "../app.service";
+import { constObjConfig } from "./config";
 
 @Component({
     selector: 'app-footer',
@@ -89,14 +89,14 @@ import { AppService } from "../app.service";
         </footer>
     `,
     styles: [``],
-    providers: [AppService]
+    providers: []
 })
 export class FooterComponent {
     strAssetLocation: string;
     strImages: string;
     
-    constructor(objAppService: AppService) {
-        this.strImages = objAppService.objUrls.strImages;
-        this.strAssetLocation = objAppService.objUrls.strMain;
+    constructor() {
+        this.strImages = constObjConfig.assets + "/images";
+        this.strAssetLocation = constObjConfig.assets;
     } // constructor
 } // AppComponent

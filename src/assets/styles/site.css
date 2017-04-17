@@ -510,3 +510,28 @@ margin: 0px 10% 0px 10%;
 		padding: 5px 16px!important;
 	}
 }
+
+
+/* =================================================
+	Care Credit Boxes
+================================================= */
+.careCreditDiv {
+	max-width: 710px;
+    margin: 0 auto;
+    width: 100%;
+	text-align: center;
+}
+
+.careCreditBox {
+	display: inline-block;
+    vertical-align: middle;
+	width: 49%;
+}
+
+.careCreditBox img {
+    width: 100%;
+}
+
+.cCFullWidth {
+	width: 100%!important;
+}

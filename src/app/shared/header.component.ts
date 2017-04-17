@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppService } from "../app.service";
+import { constObjConfig } from "./config";
 
 @Component({
     selector: 'app-header',
@@ -286,14 +286,14 @@ import { AppService } from "../app.service";
             }
         }
     `],
-    providers: [AppService]
+    providers: []
 })
 export class HeaderComponent {
     strAssetLocation: string;
     strImages: string;
     
-    constructor(objAppService: AppService) {
-        this.strImages = objAppService.objUrls.strImages;
-        this.strAssetLocation = objAppService.objUrls.strMain;
+    constructor() {
+        this.strImages = constObjConfig.assets + "/images";
+        this.strAssetLocation = constObjConfig.assets;
     } // constructor
 } // AppComponent

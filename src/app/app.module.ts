@@ -7,8 +7,8 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { AppComponents, AppRoutes } from "./app.routes";
 
-import { HeaderComponent } from "./common/header.component";
-import { FooterComponent } from "./common/footer.component";
+import { HeaderComponent } from "./shared/header.component";
+import { FooterComponent } from "./shared/footer.component";
 
 // Pages
 import { AppComponent } from './app.component';

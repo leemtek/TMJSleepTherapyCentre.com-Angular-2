@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppService } from "../app.service";
+import { constObjConfig } from "../shared/config";
 
 @Component({
     selector: 'app-appointment',
@@ -77,14 +77,14 @@ import { AppService } from "../app.service";
         </section><!-- /wrapper -->
     `,
     styles: [``],
-    providers: [AppService]
+    providers: []
 })
 export class AppointmentComponent {
     strAssetLocation: string;
     strImages: string;
     
-    constructor(objAppService: AppService) {
-        this.strImages = objAppService.objUrls.strImages;
-        this.strAssetLocation = objAppService.objUrls.strMain;
+    constructor() {
+        this.strImages = constObjConfig.assets + "/images";
+        this.strAssetLocation = constObjConfig.assets;
     } // constructor
 } // AppComponent

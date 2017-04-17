@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppService } from "../app.service";
+import { constObjConfig } from "../shared/config";
 
 @Component({
     selector: 'app-home',
@@ -37,6 +37,15 @@ import { AppService } from "../app.service";
                                 <img src="{{ strImages }}/btn-4.png" alt="Button Images" class="buttonSizer ">
                             </a>
                         </div>
+
+                        <div class="careCreditDiv">
+                            <div class="careCreditBox">
+                                <a href="https://www.carecredit.com/apply/confirm.html?encm=UjMEPVEzUjcGOgRgU2cKYwU_UTMBY1NtAG1XZFQ6U2A&?cmpid=B3CALAdToolkitANGraphic"><img src="http://www.carecredit.com/adtoolkit/assets/pages/library/buttons/350x259/CareCredit_Button_ApplyNow_tile_v2.png"/></a>
+                            </div>
+                            <div class="careCreditBox">
+                                <a href="https://www.carecredit.com/Pay/684XBX/"><img src="http://www.carecredit.com/adtoolkit/assets/pages/library/buttons/PMP_Buttons/350x259/CareCredit_Button_PMP_350x259_c_v1.png"/></a>
+                            </div>
+                        </div>
                     </div><!-- /conCon -->
 
                 </div><!-- /col -->
@@ -53,22 +62,45 @@ import { AppService } from "../app.service";
                         </div>
                         <h3>Dr. James Gregory's Story</h3>
                         
-                        <h3>Chelsea's Story on TMJ</h3>
                         <div class="vidCon">
-                            <iframe width="80%" class="vidsizer" height="170" src="//www.youtube.com/embed/Ax2q8MJCRE8" frameborder="0" allowfullscreen></iframe>
+                            <video class="homeVideo" controls preload="metadata" poster="images/joyce-poster.jpg">
+                                <source src="{{ strAssetLocation }}/videos/Joyce.mp4" type="video/mp4">
+                                <source src="{{ strAssetLocation }}/videos/Joyce.webm" type="video/webm">
+                                <source src="{{ strAssetLocation }}/videos/Joyce.ogv" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-
-                        <h3>Charlotte's Story on Jaw and Facial Pain</h3>
+                        <h3>Joyce's Story</h3>
+                                            
                         <div class="vidCon">
-                            <iframe width="80%" class="vidsizer" height="170" src="//www.youtube.com/embed/m-tToDZPRRQ" frameborder="0" allowfullscreen></iframe>
+                            <video class="homeVideo" controls preload="metadata" poster="images/mayrose-poster.jpg">
+                                <source src="{{ strAssetLocation }}/videos/Mayrose.mp4" type="video/mp4">
+                                <source src="{{ strAssetLocation }}/videos/Mayrose.webm" type="video/webm">
+                                <source src="{{ strAssetLocation }}/videos/Mayrose.ogv" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-
-                        <h3>Barbara's Story on TMJ/TMD and Myoclonus</h3>
+                        <h3>Mayrose's Story</h3>
+                                            
                         <div class="vidCon">
-                            <iframe width="80%" class="vidsizer" height="170" src="//www.youtube.com/embed/8I9btCPqwfI" frameborder="0" allowfullscreen></iframe>
+                            <video class="homeVideo" controls preload="metadata" poster="images/rabi-dovbe-poster.jpg">
+                                <source src="{{ strAssetLocation }}/videos/Rabi-Dovbe.mp4" type="video/mp4">
+                                <source src="{{ strAssetLocation }}/videos/Rabi-Dovbe.webm" type="video/webm">
+                                <source src="{{ strAssetLocation }}/videos/Rabi-Dovbe.ogv" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-
-                        <h3>Lynn's Story on Migraines</h3>
+                        <h3>Rabi Dovbe's Story</h3>
+                                            
+                        <div class="vidCon">
+                            <video class="homeVideo" controls preload="metadata" poster="images/chan-poster.jpg">
+                                <source src="{{ strAssetLocation }}/videos/Chan.mp4" type="video/mp4">
+                                <source src="{{ strAssetLocation }}/videos/Chan.webm" type="video/webm">
+                                <source src="{{ strAssetLocation }}/videos/Chan.ogv" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Chan's Story</h3>
                     </div><!-- /vidConMain -->
                 </div>
 
@@ -76,14 +108,14 @@ import { AppService } from "../app.service";
         </section><!-- /wrapper -->
     `,
     styles: [``],
-    providers: [AppService]
+    providers: []
 })
 export class HomeComponent {
     strAssetLocation: string;
     strImages: string;
     
-    constructor(objAppService: AppService) {
-        this.strImages = objAppService.objUrls.strImages;
-        this.strAssetLocation = objAppService.objUrls.strMain;
+    constructor() {
+        this.strImages = constObjConfig.assets + "/images";
+        this.strAssetLocation = constObjConfig.assets;
     } // constructor
 } // AppComponent

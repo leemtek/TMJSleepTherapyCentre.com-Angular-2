@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { AppService } from "../app.service";
+import { constObjConfig } from "../shared/config";
 
 @Component({
     selector: 'app-contact',
     template: `
         <section id="wrapper">
             <div id="maincontent" class="group">
-                <div class="col g8">
+                <div class="col g4">
                     <div class="conCon">
                         <h1>Contact Us</h1>
                         <p class="pContent">
@@ -27,7 +27,21 @@ import { AppService } from "../app.service";
                         </p>
                         <p class="pContent">Please visit our other <a routerLink="/locations">locations</a>.</p>
                     </div>
-                </div>
+                </div><!-- /col -->
+
+                <div class="col g4">
+                    <div class="conCon">
+                        <div class="careCreditDiv">
+                            <div class="careCreditBox cCFullWidth">
+                                <a href="https://www.carecredit.com/apply/confirm.html?encm=UjMEPVEzUjcGOgRgU2cKYwU_UTMBY1NtAG1XZFQ6U2A&?cmpid=B3CALAdToolkitANGraphic"><img src="http://www.carecredit.com/adtoolkit/assets/pages/library/buttons/350x259/CareCredit_Button_ApplyNow_tile_v2.png"/></a>
+                            </div>
+                            <div class="careCreditBox cCFullWidth">
+                                <a href="https://www.carecredit.com/Pay/684XBX/"><img src="http://www.carecredit.com/adtoolkit/assets/pages/library/buttons/PMP_Buttons/350x259/CareCredit_Button_PMP_350x259_c_v1.png"/></a>
+                            </div>
+                        </div><!-- /careCreditDiv -->
+                    </div><!-- /conCon -->
+                </div><!-- /col -->
+
                 <div class="col g4">
                     <div class="vidConMain">
                         <div class="vidCon">
@@ -48,14 +62,14 @@ import { AppService } from "../app.service";
         </section><!-- /wrapper -->
     `,
     styles: [``],
-    providers: [AppService]
+    providers: []
 })
 export class ContactComponent {
     strAssetLocation: string;
     strImages: string;
     
-    constructor(objAppService: AppService) {
-        this.strImages = objAppService.objUrls.strImages;
-        this.strAssetLocation = objAppService.objUrls.strMain;
+    constructor() {
+        this.strImages = constObjConfig.assets + "/images";
+        this.strAssetLocation = constObjConfig.assets;
     } // constructor
 } // AppComponent
