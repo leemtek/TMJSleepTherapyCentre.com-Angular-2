@@ -1,7 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+
+// Addons
+import { ReCaptchaModule } from 'angular2-recaptcha';
 
 // Routing
 import { RouterModule } from '@angular/router';
@@ -21,8 +24,9 @@ import { ContactComponent } from "./pages/contact.component";
 import { NewPatientsComponent } from "./pages/new-patients.component";
 
 // Forms
-import { OnlineReferralComponent } from "./forms/online-referral.component";
+import { OnlineReferralComponent } from "./forms/online-referral/online-referral.component";
 import { AppointmentComponent } from "./forms/appointment.component";
+import { FooterFormComponent } from "./forms/footer-form/footer-form.component";
 
 // Pages: Services
 import { TmjComponent } from "./pages/services/tmj.component";
@@ -56,6 +60,7 @@ import { SleepApneaComponent } from "./pages/education/sleep-apnea.component";
     // Forms
     OnlineReferralComponent,
     AppointmentComponent,
+    FooterFormComponent,
 
     // Services
     TmjComponent,
@@ -76,8 +81,9 @@ import { SleepApneaComponent } from "./pages/education/sleep-apnea.component";
     FormsModule,
     HttpModule,
     RouterModule, RouterModule.forRoot(AppRoutes),
+    ReCaptchaModule
   ],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

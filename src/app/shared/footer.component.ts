@@ -10,22 +10,7 @@ import { constObjConfig } from "./config";
 
                     <h2>Send Us An E-Mail</h2>
 
-                    <form method="post" name="footerForm" action="footer-to-email.php" id="footerForm">
-                        <input id="du6axAQu" name="du6axAQu" type="text" value=""  />
-
-                        <div id='footerForm_errorloc' class='error_strings'></div>
-
-                        <p><input type="text" name="name"  class="form" placeholder=" YOUR NAME *"></p>
-                        <br />
-
-                        <p><input type="text" name="phoneNumber" class="form" placeholder=" TELEPHONE *" ></p>
-                        <br />
-
-                        <p><input type="text" name="email" class="form" placeholder=" EMAIL ADDRESS *"></p>
-                        <br />
-                        
-                        <input type="submit" name='submit' value="SEND" class="submitForm">
-                    </form>
+                    <app-form-footer>Loading...</app-form-footer>
                 </div>
 
                 <div class="col g4 footSpacer">

@@ -8,7 +8,7 @@ import { ContactComponent } from "./pages/contact.component";
 import { NewPatientsComponent } from "./pages/new-patients.component";
 
 // Forms
-import { OnlineReferralComponent } from "./forms/online-referral.component";
+import { OnlineReferralComponent } from "./forms/online-referral/online-referral.component";
 import { AppointmentComponent } from "./forms/appointment.component";
 
 // Pages: Services

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { constObjConfig } from "../../shared/config";
 
+import { SeoService } from "../../shared/seo.service";
+
 @Component({
     selector: 'app-craniofacial',
     template: `
@@ -33,14 +35,17 @@ import { constObjConfig } from "../../shared/config";
         </section><!-- /wrapper -->
     `,
     styles: [``],
-    providers: []
+    providers: [SeoService]
 })
 export class CraniofacialComponent {
     strAssetLocation: string;
     strImages: string;
     
-    constructor() {
+    constructor(seoService: SeoService) {
         this.strImages = constObjConfig.assets + "/images";
         this.strAssetLocation = constObjConfig.assets;
+
+        // SEO
+        seoService.setTitle("Craniofacial - TMJ & Sleep Therapy Centre of San Francisco");
     } // constructor
 } // AppComponent

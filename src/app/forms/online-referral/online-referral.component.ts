@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { constObjConfig } from "../shared/config";
+import { constObjConfig } from "../../shared/config";
 
 @Component({
     selector: 'app-online-referral',
