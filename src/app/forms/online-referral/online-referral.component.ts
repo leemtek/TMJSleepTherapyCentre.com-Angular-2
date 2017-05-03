@@ -1,5 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { constObjConfig } from "../../shared/config";
+import { OnlineReferralService } from "./online-referral.service";
+
+import { User } from "./user.interface";
+
+// Enables jQuery
+declare var $:any;
 
 @Component({
     selector: 'app-online-referral',
@@ -11,52 +18,58 @@ import { constObjConfig } from "../../shared/config";
                         <h1>Online Referral Form</h1>
                         <p>When your patients experience one or more of these symptoms, they should have a thorough evaluation by a dentist trained in TM and Sleep. We will be happy to assist you in diagnosis and treatment for possible Craniomandibular, Temporomandibular or Sleep Disordered Breathing/Apnea.</p>
                         <br />
-                        <form name="contactform" id="contactform">
+                        <form [formGroup]="form" (ngSubmit)="mdSend(form)">
                             <div class="space-bottom-40">
                                 <p class="boldTxt">Patient Information</p>
-                                <p><input type="text" name="name" class="form" placeholder="Name:"></p>
-                                <p><input type="text" name="address" class="form" placeholder="Address"></p>
-                                <p><input type="text" name="phone" class="form" placeholder="Phone:"></p>
+                                <p><input type="text" class="form" placeholder="Name:" formControlName="strPatient_Name" /></p>
+                                <p><input type="text" class="form" placeholder="Address:" formControlName="strPatient_Address" /></p>
+                                <p><input type="text" class="form" placeholder="Phone:" formControlName="strPatient_Phone" /></p>
                             </div>
                             
                             <div class="space-bottom-40">
                                 <p class="boldTxt">Referred By</p>
-                                <p><input type="text" name="referName" class="form" required placeholder="Name:"></p>
-                                <p><input type="text" name="referPhone" class="form" required placeholder="Phone:"></p>
-                                <p><input type="text" name="referDate" class="form" required placeholder="Date:"></p>
-                                <p><input type="text" name="referFax" class="form" required placeholder="Fax:"></p>
+                                <p><input type="text" class="form" placeholder="Name:" formControlName="strReferredBy_Name" /></p>
+                                <p><input type="text" class="form" placeholder="Phone:" formControlName="strReferredBy_Phone" /></p>
+                                <p><input type="text" class="form" placeholder="Date:" formControlName="strReferredBy_Date" /></p>
+                                <p><input type="text" class="form" placeholder="Fax:" formControlName="strReferredBy_Fax" /></p>
                             </div>
 
                             <div class="space-bottom-40">
-                                <label><input type="checkbox" name="referOption[]" value="Exam" id="CheckboxGroup2_0"> Exam</label>
-                                <label><input type="checkbox" name="referOption[]" value="2nd Option" id="CheckboxGroup2_1"> 2nd Option</label>
-                                <label><input type="checkbox" name="referOption[]" value="Send Report" id="CheckboxGroup2_2"> Send Report</label>
-                                <label><input type="checkbox" name="referOption[]" value="Call Me" id="CheckboxGroup2_3"> Call Me</label>
+                                <label><input type="checkbox" value="Exam" formControlName="isReferredBy_Exam" /> Exam</label>
+                                <label><input type="checkbox" value="2nd Option" formControlName="isReferredBy_2ndOption" /> 2nd Option</label>
+                                <label><input type="checkbox" value="Send Report" formControlName="isReferredBy_SendReport" /> Send Report</label>
+                                <label><input type="checkbox" value="Call Me" formControlName="isReferredBy_CallMe" /> Call Me</label>
                             </div>
                             
                             <div class="space-bottom-40">
                                 <p class="boldTxt">Screening Form</p>
                                 <p>For Patients with Head, Neck and Facial Pain &amp; Sleep Disordered Breathing/Apnea</p>
-                                <p>
-                                    <label><input type="checkbox" name="tmjScreen[]" value="Primary headaches or migranes" id="CheckboxGroup1_0"> Primary headaches or migranes</label><br />
-                                    <label><input type="checkbox" name="tmjScreen[]" value="Snoring / Sleep Apnea" id="CheckboxGroup1_1"> Snoring / Sleep Apnea</label><br />
-                                    <label><input type="checkbox" name="tmjScreen[]" value="Disturbed, restless sleeping" id="CheckboxGroup1_2"> Disturbed, restless sleeping</label><br />
-                                    <label><input type="checkbox" name="tmjScreen[]" value="CPAP Intolerance" id="CheckboxGroup1_3"> CPAP Intolerance</label><br />
-                                    <label><input type="checkbox" name="tmjScreen[]" value="Daytime drowsiness" id="CheckboxGroup1_4"> Daytime drowsiness</label><br />
-                                    <label><input type="checkbox" name="tmjScreen[]" value="Attention deficit in children" id="CheckboxGroup1_5"> Attention deficit in children</label><br />
-                                    <label><input type="checkbox" name="tmjScreen[]" value="Earaches, stuffiness or ringing" id="CheckboxGroup1_6"> Earaches, stuffiness or ringing</label><br />
-                                    <label><input type="checkbox" name="tmjScreen[]" value="Neck, shoulder, back pain or stiffness" id="CheckboxGroup1_7"> Neck, shoulder, back pain or stiffness</label><br />
-                                    <label><input type="checkbox" name="tmjScreen[]" value="Dizziness" id="CheckboxGroup1_7"> Dizziness</label><br />
-                                    <label><input type="checkbox" name="tmjScreen[]" value="Pain or soreness in TM joints" id="CheckboxGroup1_8"> Pain or soreness in TM joints</label><br />
-                                    <label><input type="checkbox" name="tmjScreen[]" value="Clicking or grating sounds in TM joints" id="CheckboxGroup1_9"> Clicking or grating sounds in TM joints</label><br />
-                                    <label><input type="checkbox" name="tmjScreen[]" value="Limited mouth opening" id="CheckboxGroup1_10"> Limited mouth opening</label><br />
-                                    <label><input type="checkbox" name="tmjScreen[]" value="Locking jaw (opened or closed)" id="CheckboxGroup1_11"> Locking jaw (opened or closed)</label><br />
-                                    <label><input type="checkbox" name="tmjScreen[]" value="Facial or undiagnosed teeth pain" id="CheckboxGroup1_12"> Facial or undiagnosed teeth pain</label><br />
-                                    <label><input type="checkbox" name="tmjScreen[]" value="Difficulty swallowing" id="CheckboxGroup1_13"> Difficulty swallowing</label><br />
-                                </p>
+                                
+                                <div class="space-bottom-5"><input type="checkbox" value="Primary headaches or migranes" formControlName="isHeadaches" /> Primary headaches or migranes</div>
+                                <div class="space-bottom-5"><input type="checkbox" value="Snoring / Sleep Apnea" formControlName="isSnoring" /> Snoring / Sleep Apnea</div>
+                                <div class="space-bottom-5"><input type="checkbox" value="Disturbed, restless sleeping" formControlName="isRestless" /> Disturbed, restless sleeping</div>
+                                <div class="space-bottom-5"><input type="checkbox" value="CPAP Intolerance" formControlName="isCPAP" /> CPAP Intolerance</div>
+                                <div class="space-bottom-5"><input type="checkbox" value="Daytime drowsiness" formControlName="isDrowsiness" /> Daytime drowsiness</div>
+                                <div class="space-bottom-5"><input type="checkbox" value="Attention deficit in children" formControlName="isAttentionDeficit" /> Attention deficit in children</div>
+                                <div class="space-bottom-5"><input type="checkbox" value="Earaches, stuffiness or ringing" formControlName="isEaraches" /> Earaches, stuffiness or ringing</div>
+                                <div class="space-bottom-5"><input type="checkbox" value="Neck, shoulder, back pain or stiffness" formControlName="isNeckShoulderPain" /> Neck, shoulder, back pain or stiffness</div>
+                                <div class="space-bottom-5"><input type="checkbox" value="Dizziness" formControlName="isDizziness" /> Dizziness</div>
+                                <div class="space-bottom-5"><input type="checkbox" value="Clicking or grating sounds in TM joints" formControlName="isClickingTMJ" /> Clicking or grating sounds in TM joints</div>
+                                <div class="space-bottom-5"><input type="checkbox" value="Limited mouth opening" formControlName="isLimitedMouth" /> Limited mouth opening</div>
+                                <div class="space-bottom-5"><input type="checkbox" value="Locking jaw (opened or closed)" formControlName="isLockingJaw" /> Locking jaw (opened or closed)</div>
+                                <div class="space-bottom-5"><input type="checkbox" value="Facial or undiagnosed teeth pain" formControlName="isFacialTeethPain" /> Facial or undiagnosed teeth pain</div>
+                                <div class="space-bottom-5"><input type="checkbox" value="Difficulty swallowing" formControlName="isDifficultySwallowing" /> Difficulty swallowing</div>
+                            </div>
+
+                            <div class="space-bottom-40">
+                                <re-captcha 
+                                    (captchaResponse)="mdCaptchaHandle($event)" 
+                                    (captchaExpired)="mdCaptchaExpired()"
+                                    site_key="6LcsqyMTAAAAAMm-8ty3y6B4mye31TbEvi1Ku8LW"
+                                ></re-captcha>
                             </div>
                             
-                            <div><input type="submit" name='Submit' value="Submit" class="submitForm" /></div>
+                            <div><button id="formSubmit" type="submit" class="submitForm" [disabled]="form.invalid || this.strGoogleResponse == null">Submit</button></div>
                         </form>
                     </div>
                 </div>
@@ -64,14 +77,99 @@ import { constObjConfig } from "../../shared/config";
         </section><!-- /wrapper -->
     `,
     styles: [``],
-    providers: []
+    providers: [OnlineReferralService]
 })
 export class OnlineReferralComponent {
+    form: FormGroup;
+
     strAssetLocation: string;
     strImages: string;
+    objUserDetails;
+    strGoogleResponse: string;
     
-    constructor() {
+    constructor(private onlineReferralService: OnlineReferralService, @Inject(FormBuilder) fb: FormBuilder) {
         this.strImages = constObjConfig.assets + "/images";
         this.strAssetLocation = constObjConfig.assets;
+
+        this.form = fb.group({
+            // Patient Information
+            strPatient_Name: ["Duane Leem", Validators.required],
+            strPatient_Address: ["123 Test Lane, San Francisco, CA"],
+            strPatient_Phone: ["925-526-5229", Validators.required],
+
+            // Referred By
+            strReferredBy_Name: ["Dr. Alkhoury", Validators.required],
+            strReferredBy_Phone: ["925-240-1380", Validators.required],
+            strReferredBy_Date: ["5/3/2017", Validators.required],
+            strReferredBy_Fax: [""],
+            isReferredBy_Exam: [false],
+            isReferredBy_2ndOption: [false],
+            isReferredBy_SendReport: [false],
+            isReferredBy_CallMe: [false],
+
+            // Screening Form
+            isHeadaches: [false],
+            isSnoring: [false],
+            isRestless:  [false],
+            isCPAP: [false],
+            isDrowsiness: [false],
+            isAttentionDeficit: [false],
+            isEaraches: [false],
+            isNeckShoulderPain: [false],
+            isDizziness: [false],
+            isClickingTMJ: [false],
+            isLimitedMouth: [false],
+            isLockingJaw: [false],
+            isFacialTeethPain: [false],
+            isDifficultySwallowing: [false]
+        }) // this.fb.group()
     } // constructor
+
+    // Send to REST endpoint.
+    mdSend({value, valid}: {value: User, valid: boolean}) {
+        // Take value and convert to JSON
+        this.objUserDetails = value;
+        // Attach successful Google reCAPTCHA.
+        this.objUserDetails.googleResponse = this.strGoogleResponse;
+        
+        // Disable submit button and indicate "Please wait...".
+        $('#formSubmit').text('Please Wait...');
+        $('#formSubmit').removeClass('btn-default').addClass('btn-info');
+        $("#formSubmit").prop('disabled', true);
+
+        // Attempt to send email.
+        $('#formSubmit').text('Email Sent. Thanks! :)');
+        $('#formSubmit').removeClass('btn-info').addClass('btn-success');
+        $("#formSubmit").prop('disabled', true);
+
+        console.log(this.objUserDetails);
+
+        /*
+        this.onlineReferralService.mdSendData(this.objUserDetails)
+            .subscribe(data => {
+                if (data.sent === "yes") {
+                    // Success
+                    $('#formSubmit').text('Email Sent to Duane.  Thanks! :)');
+                    $('#formSubmit').removeClass('btn-info').addClass('btn-success');
+                    $("#formSubmit").prop('disabled', true);
+                } else {
+                    // Something went wrong.
+                    $('#formSubmit').text('Please try again.');
+                    $('#formSubmit').removeClass('btn-info').addClass('btn-danger');
+                    $("#formSubmit").prop('disabled', false);
+                } // else
+            }) // subscribe()
+        ; // sendEmailService.mdSendData()
+        */
+    } // mdSend()
+
+    // Handle the captcha response and save to objUserDetails.captchaResponse
+    mdCaptchaHandle(strResponse: string): void {
+        this.strGoogleResponse = strResponse;
+    } // mdCaptchaHandle(response)
+
+    // Handles expired captchas.
+    mdCaptchaExpired(): void {
+        this.strGoogleResponse = null;
+    } // mdCaptchaHandle()
 } // AppComponent

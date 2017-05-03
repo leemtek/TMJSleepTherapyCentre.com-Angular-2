@@ -1,6 +1,6 @@
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 // Addons
@@ -78,7 +78,8 @@ import { SleepApneaComponent } from "./pages/education/sleep-apnea.component";
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    FormsModule, 
+    ReactiveFormsModule,
     HttpModule,
     RouterModule, RouterModule.forRoot(AppRoutes),
     ReCaptchaModule
