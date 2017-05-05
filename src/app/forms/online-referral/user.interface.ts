@@ -25,6 +25,7 @@ export interface User {
     isEaraches: boolean;
     isNeckShoulderPain: boolean;
     isDizziness: boolean;
+    isPainTMJ: boolean;
     isClickingTMJ: boolean;
     isLimitedMouth: boolean;
     isLockingJaw: boolean;

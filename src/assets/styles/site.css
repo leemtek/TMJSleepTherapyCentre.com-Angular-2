@@ -533,5 +533,11 @@ margin: 0px 10% 0px 10%;
 }
 
 .cCFullWidth {
-	width: 100%!important;
+	width: 100% !important;
 }
+
+
+/* =================================================
+	Common
+================================================= */
+.text-center { text-align: center; }

@@ -9,7 +9,8 @@ import { NewPatientsComponent } from "./pages/new-patients.component";
 
 // Forms
 import { OnlineReferralComponent } from "./forms/online-referral/online-referral.component";
-import { AppointmentComponent } from "./forms/appointment.component";
+import { AppointmentComponent } from "./forms/appointment/appointment.component";
+import { ThankYouComponent } from "./forms/thank-you.component";
 
 // Pages: Services
 import { TmjComponent } from "./pages/services/tmj.component";
@@ -38,6 +39,7 @@ export const AppRoutes: any = [
     // Forms
     { path: "online-referral", component: OnlineReferralComponent },
     { path: "appointment", component: AppointmentComponent },
+    { path: "thank-you", component: ThankYouComponent },
 
     // Services
     { path: "tmj", component: TmjComponent },

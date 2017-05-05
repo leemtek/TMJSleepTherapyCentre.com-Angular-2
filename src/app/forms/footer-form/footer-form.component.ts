@@ -7,7 +7,7 @@ declare var $:any;
 @Component({
     selector: "app-form-footer",
     template: `
-        <form #footerForm="ngForm">
+        <form #footerForm="ngForm" (ngSubmit)="mdSend()">
             <p class="space-bottom-10">
                 <input type="text" name="name"  class="form" placeholder=" YOUR NAME *" 
                     [(ngModel)]="objUserDetails.strName"
@@ -38,7 +38,7 @@ declare var $:any;
             </div>
             
             <button type="submit" id="footerBtnSubmit" class="submitForm"
-                [disabled]="footerForm.invalid || this.objUserDetails.googleResponse == null"
+                [disabled]="footerForm.invalid || objUserDetails.googleResponse == null"
             >Submit</button>
         </form>
     `,

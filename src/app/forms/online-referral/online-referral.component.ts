@@ -1,4 +1,8 @@
+/* ============================================================
+    The form uses NG FormBuilder.
+============================================================ */
 import { Component, Inject } from '@angular/core';
+import { Router } from "@angular/router";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { constObjConfig } from "../../shared/config";
 import { OnlineReferralService } from "./online-referral.service";
@@ -54,6 +58,7 @@ declare var $:any;
                                 <div class="space-bottom-5"><input type="checkbox" value="Earaches, stuffiness or ringing" formControlName="isEaraches" /> Earaches, stuffiness or ringing</div>
                                 <div class="space-bottom-5"><input type="checkbox" value="Neck, shoulder, back pain or stiffness" formControlName="isNeckShoulderPain" /> Neck, shoulder, back pain or stiffness</div>
                                 <div class="space-bottom-5"><input type="checkbox" value="Dizziness" formControlName="isDizziness" /> Dizziness</div>
+                                <div class="space-bottom-5"><input type="checkbox" value="Dizziness" formControlName="isPainTMJ" /> Pain or soreness in TM joints</div>
                                 <div class="space-bottom-5"><input type="checkbox" value="Clicking or grating sounds in TM joints" formControlName="isClickingTMJ" /> Clicking or grating sounds in TM joints</div>
                                 <div class="space-bottom-5"><input type="checkbox" value="Limited mouth opening" formControlName="isLimitedMouth" /> Limited mouth opening</div>
                                 <div class="space-bottom-5"><input type="checkbox" value="Locking jaw (opened or closed)" formControlName="isLockingJaw" /> Locking jaw (opened or closed)</div>
@@ -87,20 +92,20 @@ export class OnlineReferralComponent {
     objUserDetails;
     strGoogleResponse: string;
     
-    constructor(private onlineReferralService: OnlineReferralService, @Inject(FormBuilder) fb: FormBuilder) {
+    constructor(private onlineReferralService: OnlineReferralService, @Inject(FormBuilder) fb: FormBuilder, private router: Router) {
         this.strImages = constObjConfig.assets + "/images";
         this.strAssetLocation = constObjConfig.assets;
 
         this.form = fb.group({
             // Patient Information
-            strPatient_Name: ["Duane Leem", Validators.required],
-            strPatient_Address: ["123 Test Lane, San Francisco, CA"],
-            strPatient_Phone: ["925-526-5229", Validators.required],
+            strPatient_Name: ["", Validators.required],
+            strPatient_Address: [""],
+            strPatient_Phone: ["", Validators.required],
 
             // Referred By
-            strReferredBy_Name: ["Dr. Alkhoury", Validators.required],
-            strReferredBy_Phone: ["925-240-1380", Validators.required],
-            strReferredBy_Date: ["5/3/2017", Validators.required],
+            strReferredBy_Name: ["", Validators.required],
+            strReferredBy_Phone: ["", Validators.required],
+            strReferredBy_Date: ["", Validators.required],
             strReferredBy_Fax: [""],
             isReferredBy_Exam: [false],
             isReferredBy_2ndOption: [false],
@@ -117,6 +122,7 @@ export class OnlineReferralComponent {
             isEaraches: [false],
             isNeckShoulderPain: [false],
             isDizziness: [false],
+            isPainTMJ: [false],
             isClickingTMJ: [false],
             isLimitedMouth: [false],
             isLockingJaw: [false],
@@ -137,21 +143,16 @@ export class OnlineReferralComponent {
         $('#formSubmit').removeClass('btn-default').addClass('btn-info');
         $("#formSubmit").prop('disabled', true);
 
-        // Attempt to send email.
-        $('#formSubmit').text('Email Sent. Thanks! :)');
-        $('#formSubmit').removeClass('btn-info').addClass('btn-success');
-        $("#formSubmit").prop('disabled', true);
+        // console.log(this.objUserDetails);
 
-        console.log(this.objUserDetails);
-
-        /*
         this.onlineReferralService.mdSendData(this.objUserDetails)
             .subscribe(data => {
                 if (data.sent === "yes") {
                     // Success
-                    $('#formSubmit').text('Email Sent to Duane.  Thanks! :)');
                     $('#formSubmit').removeClass('btn-info').addClass('btn-success');
                     $("#formSubmit").prop('disabled', true);
+
+                    this.router.navigate(["/thank-you"]);
                 } else {
                     // Something went wrong.
                     $('#formSubmit').text('Please try again.');
@@ -160,7 +161,6 @@ export class OnlineReferralComponent {
                 } // else
             }) // subscribe()
         ; // sendEmailService.mdSendData()
-        */
     } // mdSend()
 
     // Handle the captcha response and save to objUserDetails.captchaResponse

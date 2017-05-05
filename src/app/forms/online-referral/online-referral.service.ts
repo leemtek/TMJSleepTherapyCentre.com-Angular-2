@@ -8,7 +8,8 @@ import "rxjs/Rx"; // used for .map
 
 @Injectable()
 export class OnlineReferralService {
-    private strPostUrl: string = "https://leemtek.com/forms/duaneleem/footer";
+    private strPostUrl: string = "https://leemtek.com/forms/tmjsleeptherapycentre/online-referral";
+    // private strPostUrl: string = "http://localhost:3003/forms/tmjsleeptherapycentre/online-referral";
     
     constructor(private http: Http) {}
     

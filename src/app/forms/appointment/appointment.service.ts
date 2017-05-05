@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers } from "@angular/http";
-
 import { User } from "./user.interface";
 
 // rxjs
@@ -8,17 +7,9 @@ import {Observable} from "rxjs/Observable";
 import "rxjs/Rx"; // used for .map
 
 @Injectable()
-export class FooterFormService {
-    private strPostUrl: string = "https://leemtek.com/forms/tmjsleeptherapycentre/footer";
-    // private strPostUrl: string = "http://localhost:3003/forms/tmjsleeptherapycentre/footer";
-    
-    // Details of my visitor.
-    objSenderInfo: User = {
-        strName: null,
-        strPhone: null,
-        strEmail: null,
-        googleResponse: null
-    }; // objSenderInfo
+export class AppointmentService {
+    private strPostUrl: string = "https://leemtek.com/forms/tmjsleeptherapycentre/appointment";
+    // private strPostUrl: string = "http://localhost:3003/forms/tmjsleeptherapycentre/appointment";
     
     constructor(private http: Http) {}
     
