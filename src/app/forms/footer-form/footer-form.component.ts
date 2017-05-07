@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 import { FooterFormService } from "./footer-form.service";
 
 // Enables jQuery
@@ -48,7 +49,7 @@ declare var $:any;
 export class FooterFormComponent {
     objUserDetails;
     
-    constructor(private footerFormService: FooterFormService) {
+    constructor(private footerFormService: FooterFormService, private router: Router) {
         this.objUserDetails = footerFormService.objSenderInfo;
     } // constructor()
 
@@ -64,9 +65,11 @@ export class FooterFormComponent {
             .subscribe(data => {
                 if (data.sent === "yes") {
                     // Success
-                    $('#footerBtnSubmit').text('Email Sent to Duane.  Thanks! :)');
+                    $('#footerBtnSubmit').text('Email Sent');
                     $('#footerBtnSubmit').removeClass('btn-info').addClass('btn-success');
                     $("#footerBtnSubmit").prop('disabled', true);
+
+                    this.router.navigate(["/thank-you"]);
                 } else {
                     // Something went wrong.
                     $('#footerBtnSubmit').text('Please try again.');
