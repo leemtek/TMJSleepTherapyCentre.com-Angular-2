@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import {Router, Event, NavigationEnd} from '@angular/router';
 
 @Component({
     selector: 'app-root',
@@ -29,6 +30,18 @@ import { Component } from '@angular/core';
     styles: [``],
     providers: []
 })
-export class AppComponent {
-    constructor() { }
+export class AppComponent implements OnInit {
+    constructor(private router:Router) { }
+
+    ngOnInit() {
+        this.router.events.subscribe(
+            (event:Event) => {
+                // Whenever there is a change to the router, scrollTo() is initiated.
+                if (!(event instanceof NavigationEnd)) {
+                    return;
+                } // if
+                window.scrollTo(0, 0)
+            }
+        ); // this.router.events.subscribe
+    }
 } // AppComponent
