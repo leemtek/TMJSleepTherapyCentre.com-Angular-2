@@ -33,6 +33,69 @@ import { SeoService } from "../../shared/seo.service";
                         <p>
                             Some people can relapse from prior orthodontics which is known as Complex Orthodontics. Complex Orthodontics is a comprehensive treatment for pain management and correcting issues with the temporomandibular joint. In some cases, orthodontic correction of underlying problems with the TMJ can be essential to alleviating or ending other medical complaints.
                         </p>
+
+                        <p class="space-top-40"><strong>Complex &amp; Functional Orthodontics, Phase II TM Treatment:</strong></p>
+                        <p>
+                            What’s Functional Orthodontics?<br />
+                            It is reshaping and repositioning the upper jaw and lower jaw to a more harmonious
+                            position and better airways as well as straightening the teeth for growing patients
+                            (children) and none growing adults.
+                        </p>
+
+                        <p class="space-top-40 underline">For Growing Children: (SDB-Sleep Disorder Breathing)</p>
+                        <p>
+                            Identifying of any SDB- mouth breathing at early age is a key for a better airway
+                            development, then managing the Growth &amp; Development of upper and lower Jaw
+                            orthopedically as early as 2 years of age to correct the problem is much better &amp; easier
+                            than managing the symptoms later in life after growth is completed.
+                        </p>
+                        <p>
+                            Improve nasal breathing by evaluating any presence of enlarged tonsils &amp; adenoids first
+                            then orthopedically expanding the upper jaw and/or re-posturing the lower jaw into
+                            optimum position where airways are maximized should be the treatment of choice here.
+                        </p>
+                        <div class="group">
+                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho1-children.png" class="width-100p" /></div>
+                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho2-children.png" class="width-100p" /></div>
+                        </div>
+                        <div class="group">
+                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho3-children.png" class="width-100p" /></div>
+                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho4-children-after-expansion.png" class="width-100p" /></div>
+                        </div>
+                        <div class="group">
+                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho6-children.png" class="width-100p" /></div>
+                        </div>
+
+                        <p class="space-top-40 underline">For Adults: Phase II TM Treatment:</p>
+                        <p>
+                            After successfully finishing Phase I TM treatment, stabilizing the jaw joint and re
+                            posturing the lower jaw in a better position, for long term stabilization, Phase II TM
+                            treatment is needed in some cases to move the teeth orthodontically into a better
+                            position that provides less stress load on the jaw joint and maintain joint space
+                            decompressed (disc capturing).
+                        </p>
+
+                        <div class="group">
+                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho1-adults.png" class="width-100p" /></div>
+                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho2-adults.png" class="width-100p" /></div>
+                        </div>
+                        <div class="group">
+                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho3-adults.png" class="width-100p" /></div>
+                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho4-adults.png" class="width-100p" /></div>
+                        </div>
+                        <div class="group">
+                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho6-adults.png" class="width-100p" /></div>
+                        </div>
+                        <div class="group">
+                            <div class="col g6">
+                                <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho7-adults.png" class="width-100p" />
+                                <div>Loss of Joint Space</div>
+                            </div>
+                            <div class="col g6">
+                                <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho8-adults.png" class="width-100p" />
+                                <div>Regained Joint Space</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

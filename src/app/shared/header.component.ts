@@ -37,7 +37,7 @@ import { constObjConfig } from "./config";
                 <li><a routerLink="/" class="mainNav">HOME</a></li>
                 <li><a routerLink="/meet-dr" class="mainNav">MEET DR. ALKHOURY</a>
                 </li>
-                <li><a class="mainNav">SERVICES</a>
+                <li><a class="mainNav">SERVICES <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                     <ul>
                         <li><a routerLink="/tmj" class="secondnav">TMJ - Adults</a></li>
                         <li><a routerLink="/tmj-treatment-children" class="secondnav">TMJ  - Children</a></li>
@@ -46,21 +46,25 @@ import { constObjConfig } from "./config";
                         <li><a routerLink="/craniofacial" class="secondnav">Craniofacial pain</a></li>
                         <li><a routerLink="/facial-pain" class="secondnav">Facial Pain</a></li>
                         <li><a routerLink="/neck-jaw" class="secondnav">Neck & Jaw Pain</a></li>
-                        <li><a routerLink="/orthodontics" class="secondnav">Complex Orthodontics</a></li>
+                        <!-- <li><a routerLink="/orthodontics" class="secondnav">Complex Orthodontics</a></li> -->
                     </ul>
                 </li>
-                <li><a class="mainNav">EDUCATION</a>
+                <li><a routerLink="/orthodontics" class="mainNav">ORTHODONTICS</a>
+                <li><a class="mainNav">EDUCATION <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                     <ul>
                         <li><a routerLink="/tmj-symptoms" class="secondnav">TMJ & TMD</a></li>
-
                         <li><a routerLink="/sleep-apnea" class="secondnav">Sleep Disorders</a></li>
                     </ul>
                 </li>
 
                 <li><a routerLink="/testimonials" class="mainNav">PATIENT TESTIMONIALS</a></li>
-                <li><a routerLink="/locations" class="mainNav">LOCATIONS</a></li>
-                <li><a routerLink="/referral-form" class="mainNav">REFERRAL FORM</a></li>
-                <li><a routerLink="/contact" class="mainNav">CONTACT</a></li>
+                <li><a class="mainNav">CONTACT <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul>
+                        <li><a routerLink="/contact" class="secondnav">Contact</a></li>
+                        <li><a routerLink="/locations" class="secondnav">Locations</a></li>
+                        <li><a routerLink="/referral-form" class="secondnav">Referral Form</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 
@@ -90,7 +94,7 @@ import { constObjConfig } from "./config";
 
                     <a>
                         <div class="mobnavconbot" onClick="togglediv('navdrop3')">
-                            SERVICES
+                            SERVICES <i class="fa fa-caret-down" aria-hidden="true"></i>
                         </div>
                     </a>
 
@@ -136,17 +140,17 @@ import { constObjConfig } from "./config";
                                 Neck & Jaw Pain
                             </div>
                         </a>
-
-                        <a routerLink="/orthodontics">
-                            <div class="mobnavconbot2">
-                                Complex Orthodontics
-                            </div>
-                        </a>
                     </div>
+                    
+                    <a routerLink="/orthodontics">
+                        <div class="mobnavconbot">
+                            ORTHODONTICS
+                        </div>
+                    </a>
 
                     <a>
                         <div class="mobnavconbot" onClick="togglediv('navdrop4')">
-                            EDUCATION
+                            EDUCATION <i class="fa fa-caret-down" aria-hidden="true"></i>
                         </div>
                     </a>
 

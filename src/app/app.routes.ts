@@ -49,6 +49,8 @@ export const AppRoutes: any = [
     { path: "craniofacial", component: CraniofacialComponent },
     { path: "facial-pain", component: FacialPainComponent },
     { path: "neck-jaw", component: NeckJawComponent },
+
+    // Orthodontics
     { path: "orthodontics", component: OrthodonticsComponent },
 
     // Education
