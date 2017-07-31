@@ -42,10 +42,10 @@ import { SeoService } from "../shared/seo.service";
 
                         <div class="careCreditDiv">
                             <div class="careCreditBox">
-                                <a href="https://www.carecredit.com/apply/confirm.html?encm=UjMEPVEzUjcGOgRgU2cKYwU_UTMBY1NtAG1XZFQ6U2A&?cmpid=B3CALAdToolkitANGraphic"><img src="http://www.carecredit.com/adtoolkit/assets/pages/library/buttons/350x259/CareCredit_Button_ApplyNow_tile_v2.png"/></a>
+                                <a href="https://www.carecredit.com/apply/confirm.html?encm=UjMEPVEzUjcGOgRgU2cKYwU_UTMBY1NtAG1XZFQ6U2A&?cmpid=B3CALAdToolkitANGraphic"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/CareCredit_Button_ApplyNow_tile_v2.png"/></a>
                             </div>
                             <div class="careCreditBox">
-                                <a href="https://www.carecredit.com/Pay/684XBX/"><img src="http://www.carecredit.com/adtoolkit/assets/pages/library/buttons/PMP_Buttons/350x259/CareCredit_Button_PMP_350x259_c_v1.png"/></a>
+                                <a href="https://www.carecredit.com/Pay/684XBX/"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/CareCredit_Button_PMP_350x259_c_v1.png"/></a>
                             </div>
                         </div>
                     </div><!-- /conCon -->

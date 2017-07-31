@@ -27,6 +27,7 @@ import { SeoService } from "../shared/seo.service";
                             <strong>Achievements:</strong><br />
                             Diplomate American Board of Craniofacial Pain (DABCP)<br />
                             Diplomate American Board of Cranio - Dental Sleep Medicine (DABCDSM)<br />
+                            Diplomate Clinical Orthodontics & Dentofacial Orthopedics<br />
                             Follow American Academy of Craniofacial Pain (FAACP)<br />
                             <br />
                             <strong>Memberships:<br />

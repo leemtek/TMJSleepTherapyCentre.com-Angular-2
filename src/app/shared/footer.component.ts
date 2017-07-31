@@ -38,7 +38,7 @@ import { constObjConfig } from "./config";
                     <p id="copyright">
                         Copyright &copy; TMJ &amp; Sleep Therapy Centre - <a href="pdfs/Privacy Practices.pdf" target="_blank">Privacy Practice</a><br />
                         <a href="http://www.healthcarewebimage.com" target="_blank" id="copyright">
-                            <img src="http://www.welcometohcwi.com/images/link icon.png" alt="Healthcare Web Image logo" width="16" height="15" border="0" />
+                            <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/icon-hcwi.png" alt="Healthcare Web Image logo" width="16" height="15" border="0" />
                             Website Design and Marketing by HCWI
                         </a>
                     </p>
