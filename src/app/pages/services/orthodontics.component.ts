@@ -63,6 +63,7 @@ import { SeoService } from "../../shared/seo.service";
                             <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho4-children-after-expansion.png" class="width-100p" /></div>
                         </div>
                         <div class="group">
+                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho5-children.png" class="width-100p" /></div>
                             <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho6-children.png" class="width-100p" /></div>
                         </div>
 
@@ -84,6 +85,7 @@ import { SeoService } from "../../shared/seo.service";
                             <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho4-adults.png" class="width-100p" /></div>
                         </div>
                         <div class="group">
+                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho5-adults.png" class="width-100p" /></div>
                             <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho6-adults.png" class="width-100p" /></div>
                         </div>
                         <div class="group">
