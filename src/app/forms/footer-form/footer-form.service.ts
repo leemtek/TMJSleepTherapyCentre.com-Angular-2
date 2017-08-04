@@ -9,8 +9,8 @@ import "rxjs/Rx"; // used for .map
 
 @Injectable()
 export class FooterFormService {
-    private strPostUrl: string = "https://leemtek.com/forms/tmjsleeptherapycentre/footer";
-    // private strPostUrl: string = "http://localhost:3003/forms/tmjsleeptherapycentre/footer";
+    // private strPostUrl: string = "http://localhost:5000/leemtek-secure-forms/us-central1/tmjsleeptherapycentre/footer";
+    private strPostUrl: string = "https://us-central1-leemtek-secure-forms.cloudfunctions.net/tmjsleeptherapycentre/footer";
     
     // Details of my visitor.
     objSenderInfo: User = {

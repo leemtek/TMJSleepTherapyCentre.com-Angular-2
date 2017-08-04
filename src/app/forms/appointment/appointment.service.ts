@@ -8,8 +8,7 @@ import "rxjs/Rx"; // used for .map
 
 @Injectable()
 export class AppointmentService {
-    private strPostUrl: string = "https://leemtek.com/forms/tmjsleeptherapycentre/appointment";
-    // private strPostUrl: string = "http://localhost:3003/forms/tmjsleeptherapycentre/appointment";
+    private strPostUrl: string = "https://us-central1-leemtek-secure-forms.cloudfunctions.net/tmjsleeptherapycentre/appointment";
     
     constructor(private http: Http) {}
     

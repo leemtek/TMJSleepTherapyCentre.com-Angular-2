@@ -63,7 +63,7 @@ export class FooterFormComponent {
         // Attempt to send email.
         this.footerFormService.mdSendData(this.objUserDetails)
             .subscribe(data => {
-                if (data.sent === "yes") {
+                if (data.status === "yes") {
                     // Success
                     $('#footerBtnSubmit').text('Email Sent');
                     $('#footerBtnSubmit').removeClass('btn-info').addClass('btn-success');
@@ -75,6 +75,8 @@ export class FooterFormComponent {
                     $('#footerBtnSubmit').text('Please try again.');
                     $('#footerBtnSubmit').removeClass('btn-info').addClass('btn-danger');
                     $("#footerBtnSubmit").prop('disabled', false);
+
+                    console.log(data.status);
                 } // else
             }) // subscribe()
         ; // sendEmailService.mdSendData()
