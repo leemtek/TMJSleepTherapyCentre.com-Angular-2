@@ -120,7 +120,7 @@ export class AppointmentComponent {
             
             strMessage: [],
 
-            isMonday: [true],
+            isMonday: [false],
             isTuesday: [false],
             isWednesday: [false],
             isThursday: [false],
