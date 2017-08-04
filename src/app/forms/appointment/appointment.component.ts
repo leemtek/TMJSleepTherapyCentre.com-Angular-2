@@ -145,7 +145,7 @@ export class AppointmentComponent {
 
         this.appointmentService.mdSendData(this.objUserDetails)
             .subscribe(data => {
-                if (data.sent === "yes") {
+                if (data.status === "sent") {
                     // Success
                     $('#formSubmit').removeClass('btn-info').addClass('btn-success');
                     $("#formSubmit").prop('disabled', true);
