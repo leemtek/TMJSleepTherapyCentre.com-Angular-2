@@ -67,7 +67,6 @@ import { SeoService } from "../../shared/seo.service";
                                 <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho5-children.png" class="width-100p" />
                             </figure>
                             <figure class="col g6">
-                                <figcaption class="space-bottom-20 text-center">After Expansion</figcaption>
                                 <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho6-children.png" class="width-100p" />
                             </figure>
                         </div>
@@ -111,7 +110,7 @@ import { SeoService } from "../../shared/seo.service";
     styles: [`
         figure {
             padding: 10px 0px 10px 0px;
-            border: thin silver solid;
+            /* border: thin silver solid; */
         }
         
         img.scaled {

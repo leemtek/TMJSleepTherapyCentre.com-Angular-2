@@ -147,7 +147,7 @@ export class OnlineReferralComponent {
 
         this.onlineReferralService.mdSendData(this.objUserDetails)
             .subscribe(data => {
-                if (data.sent === "yes") {
+                if (data.status === "sent") {
                     // Success
                     $('#formSubmit').removeClass('btn-info').addClass('btn-success');
                     $("#formSubmit").prop('disabled', true);
