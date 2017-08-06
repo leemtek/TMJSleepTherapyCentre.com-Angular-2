@@ -24,19 +24,24 @@ import { constObjConfig } from "./config";
                     </div>
 
                     <div class="cycle-slideshow">
-                        <img src="{{ strImages }}/head-1.png"  class="person-picture">
-                        <img src="{{ strImages }}/head-2.png"  class="person-picture">
-                        <img src="{{ strImages }}/head-3.png"  class="person-picture">
+                        <img src="{{ strImages }}/head-1.png" class="person-picture">
+                        <img src="{{ strImages }}/head-2.png" class="person-picture">
+                        <img src="{{ strImages }}/head-3.png" class="person-picture">
                     </div>
                 </div>
             </div>
         </header>
 
-        <nav>
+        <nav id="nav_desktop">
             <ul>
                 <li><a routerLink="/" class="mainNav">HOME</a></li>
-                <li><a routerLink="/meet-dr" class="mainNav">MEET DR. ALKHOURY</a>
+                <li><a class="mainNav">MEET DR. ALKHOURY <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul>
+                        <li><a routerLink="/meet-dr" class="secondnav">Meet Dr. Alkhoury</a></li>
+                        <li><a routerLink="/meet-dr/rsvp" class="secondnav">RSVP</a></li>
+                    </ul>
                 </li>
+
                 <li><a class="mainNav">SERVICES <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                     <ul>
                         <li><a routerLink="/tmj" class="secondnav">TMJ - Adults</a></li>
@@ -58,13 +63,9 @@ import { constObjConfig } from "./config";
                 </li>
 
                 <li><a routerLink="/testimonials" class="mainNav">PATIENT TESTIMONIALS</a></li>
-                <li><a class="mainNav">CONTACT <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                    <ul>
-                        <li><a routerLink="/contact" class="secondnav">Contact</a></li>
-                        <li><a routerLink="/locations" class="secondnav">Locations</a></li>
-                        <li><a routerLink="/referral-form" class="secondnav">Referral Form</a></li>
-                    </ul>
-                </li>
+                <li><a routerLink="/locations" class="mainNav">LOCATIONS</a>
+                <li><a routerLink="/referral-form" class="mainNav">REFERRAL FORM</a>
+                <li><a routerLink="/contact" class="mainNav">CONTACT</a>
             </ul>
         </nav>
 
@@ -86,12 +87,28 @@ import { constObjConfig } from "./config";
                         </div>
                     </a>
 
-                    <a routerLink="/meet-dr">
-                        <div class="mobnavconbot" onClick="togglediv('navdrop2')">
-                            MEET DR. ALKHOURY
+                    <!-- Meet Dr -->
+                    <a>
+                        <div class="mobnavconbot" onClick="togglediv('navdrop_meetdr')">
+                            MEET DR. ALKHOURY <i class="fa fa-caret-down" aria-hidden="true"></i>
                         </div>
                     </a>
 
+                    <div id="navdrop_meetdr" style="display: none;">
+                        <a routerLink="/meet-dr">
+                            <div class="mobnavconbot2">
+                                Meet Dr. Alkhoury
+                            </div>
+                        </a>
+
+                        <a routerLink="/meet-dr/rsvp">
+                            <div class="mobnavconbot2">
+                                RSVP
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Services -->
                     <a>
                         <div class="mobnavconbot" onClick="togglediv('navdrop3')">
                             SERVICES <i class="fa fa-caret-down" aria-hidden="true"></i>
@@ -253,7 +270,6 @@ import { constObjConfig } from "./config";
                 font-size: 12.25px;
             }
 
-
             nav ul ul {
                 background: #357775; border-radius: 0px; padding: 0;
                 position: absolute; top: 100%;
@@ -288,6 +304,17 @@ import { constObjConfig } from "./config";
             nav ul {
                 max-width: 1005px;
             }
+        }
+
+        /* Change the size of the nav fonts so they fit on desktop view. */
+        #nav_desktop ul li a.mainNav {
+            font-size: 12px;
+        }
+
+        /* Appropriately fix new navdrop's for new menus on mobile view. */
+        #navdrop_meetdr {
+            display: none;
+	        width: 100%;
         }
     `],
     providers: []

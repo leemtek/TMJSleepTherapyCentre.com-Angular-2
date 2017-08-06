@@ -27,6 +27,7 @@ import { NewPatientsComponent } from "./pages/new-patients.component";
 import { OnlineReferralComponent } from "./forms/online-referral/online-referral.component";
 import { AppointmentComponent } from "./forms/appointment/appointment.component";
 import { FooterFormComponent } from "./forms/footer-form/footer-form.component";
+import { MeetDrRSVPComponent } from "./forms/rsvp/meet-dr-rsvp.component";
 import { ThankYouComponent } from "./forms/thank-you.component";
 
 // Pages: Services
@@ -62,6 +63,7 @@ import { SleepApneaComponent } from "./pages/education/sleep-apnea.component";
     OnlineReferralComponent,
     AppointmentComponent,
     FooterFormComponent,
+    MeetDrRSVPComponent,
     ThankYouComponent,
 
     // Services

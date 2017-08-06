@@ -55,16 +55,21 @@ import { SeoService } from "../../shared/seo.service";
                             optimum position where airways are maximized should be the treatment of choice here.
                         </p>
                         <div class="group">
-                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho1-children.png" class="width-100p" /></div>
-                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho2-children.png" class="width-100p" /></div>
+                            <figure class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho1-children.png" class="width-100p" /></figure>
+                            <figure class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho2-children.png" class="width-100p" /></figure>
                         </div>
                         <div class="group">
-                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho3-children.png" class="width-100p" /></div>
-                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho4-children-after-expansion.png" class="width-100p" /></div>
+                            <figure class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho3-children.png" class="width-100p" /></figure>
+                            <figure class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho4-children-after-expansion.png" class="width-100p" /></figure>
                         </div>
                         <div class="group">
-                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho5-children.png" class="width-100p" /></div>
-                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho6-children.png" class="width-100p" /></div>
+                            <figure class="col g6">
+                                <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho5-children.png" class="width-100p" />
+                            </figure>
+                            <figure class="col g6">
+                                <figcaption class="space-bottom-20 text-center">After Expansion</figcaption>
+                                <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho6-children.png" class="width-100p" />
+                            </figure>
                         </div>
 
                         <p class="space-top-40 underline">For Adults: Phase II TM Treatment:</p>
@@ -77,33 +82,42 @@ import { SeoService } from "../../shared/seo.service";
                         </p>
 
                         <div class="group">
-                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho1-adults.png" class="width-100p" /></div>
-                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho2-adults.png" class="width-100p" /></div>
+                            <figure class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho1-adults.png" class="width-100p" /></figure>
+                            <figure class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho2-adults.png" class="width-100p" /></figure>
                         </div>
                         <div class="group">
-                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho3-adults.png" class="width-100p" /></div>
-                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho4-adults.png" class="width-100p" /></div>
+                            <figure class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho3-adults.png" class="width-100p" /></figure>
+                            <figure class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho4-adults.png" class="width-100p" /></figure>
                         </div>
                         <div class="group">
-                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho5-adults.png" class="width-100p" /></div>
-                            <div class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho6-adults.png" class="width-100p" /></div>
+                            <figure class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho5-adults.png" class="width-100p" /></figure>
+                            <figure class="col g6"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho6-adults.png" class="width-100p" /></figure>
                         </div>
                         <div class="group">
-                            <div class="col g6">
+                            <figure class="col g6">
+                                <div class="space-bottom-20 text-center">Loss of Joint Space</div>
                                 <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho7-adults.png" class="width-100p" />
-                                <div>Loss of Joint Space</div>
-                            </div>
-                            <div class="col g6">
+                            </figure>
+                            <figure class="col g6">
+                                <div class="space-bottom-20 text-center">Regained Joint Space</div>
                                 <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/orthodontics/ortho8-adults.png" class="width-100p" />
-                                <div>Regained Joint Space</div>
-                            </div>
+                            </figure>
                         </div>
                     </div>
                 </div>
             </div>
         </section><!-- /wrapper -->
     `,
-    styles: [``],
+    styles: [`
+        figure {
+            padding: 10px 0px 10px 0px;
+            border: thin silver solid;
+        }
+        
+        img.scaled {
+            width: 100%;
+        }
+    `],
     providers: [SeoService]
 })
 export class OrthodonticsComponent {
