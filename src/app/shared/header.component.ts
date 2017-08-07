@@ -35,12 +35,8 @@ import { constObjConfig } from "./config";
         <nav id="nav_desktop">
             <ul>
                 <li><a routerLink="/" class="mainNav">HOME</a></li>
-                <li><a class="mainNav">MEET DR. ALKHOURY <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                    <ul>
-                        <li><a routerLink="/meet-dr" class="secondnav">Meet Dr. Alkhoury</a></li>
-                        <li><a routerLink="/meet-dr/rsvp" class="secondnav">RSVP</a></li>
-                    </ul>
-                </li>
+
+                <li><a routerLink="/meet-dr" class="mainNav">MEET DR. ALKHOURY</a></li>
 
                 <li><a class="mainNav">SERVICES <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                     <ul>
@@ -54,7 +50,9 @@ import { constObjConfig } from "./config";
                         <!-- <li><a routerLink="/orthodontics" class="secondnav">Complex Orthodontics</a></li> -->
                     </ul>
                 </li>
+
                 <li><a routerLink="/orthodontics" class="mainNav">ORTHODONTICS</a>
+
                 <li><a class="mainNav">EDUCATION <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                     <ul>
                         <li><a routerLink="/tmj-symptoms" class="secondnav">TMJ & TMD</a></li>
@@ -63,8 +61,16 @@ import { constObjConfig } from "./config";
                 </li>
 
                 <li><a routerLink="/testimonials" class="mainNav">PATIENT TESTIMONIALS</a></li>
+                
                 <li><a routerLink="/locations" class="mainNav">LOCATIONS</a>
-                <li><a routerLink="/referral-form" class="mainNav">REFERRAL FORM</a>
+
+                <li><a class="mainNav">FOR DOCTORS <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul>
+                        <li><a routerLink="/referral-form" class="secondnav">Referral Form</a></li>
+                        <li><a routerLink="/rsvp" class="secondnav">RSVP</a></li>
+                    </ul>
+                </li>
+
                 <li><a routerLink="/contact" class="mainNav">CONTACT</a>
             </ul>
         </nav>
@@ -88,25 +94,11 @@ import { constObjConfig } from "./config";
                     </a>
 
                     <!-- Meet Dr -->
-                    <a>
-                        <div class="mobnavconbot" onClick="togglediv('navdrop_meetdr')">
-                            MEET DR. ALKHOURY <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <a routerLink="/meet-dr">
+                        <div class="mobnavconbot">
+                            MEET DR. ALKHOURY
                         </div>
                     </a>
-
-                    <div id="navdrop_meetdr" style="display: none;">
-                        <a routerLink="/meet-dr">
-                            <div class="mobnavconbot2">
-                                Meet Dr. Alkhoury
-                            </div>
-                        </a>
-
-                        <a routerLink="/meet-dr/rsvp">
-                            <div class="mobnavconbot2">
-                                RSVP
-                            </div>
-                        </a>
-                    </div>
 
                     <!-- Services -->
                     <a>
@@ -197,12 +189,28 @@ import { constObjConfig } from "./config";
                         </div>
                     </a>
 
-                    <a routerLink="/referral-form">
-                        <div class="mobnavconbot">
-                            REFERRAL FORM
+                    <!-- For Doctors -->
+                    <a>
+                        <div class="mobnavconbot" onClick="togglediv('navdrop_fordoctors')">
+                            FOR DOCTORS <i class="fa fa-caret-down" aria-hidden="true"></i>
                         </div>
                     </a>
 
+                    <div id="navdrop_fordoctors" style="display: none;">
+                        <a routerLink="/referral-form">
+                            <div class="mobnavconbot2">
+                                Referral Form
+                            </div>
+                        </a>
+
+                        <a routerLink="/rsvp">
+                            <div class="mobnavconbot2">
+                                RSVP
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Contact -->
                     <a routerLink="/contact">
                         <div class="mobnavconbot">
                             CONTACT
@@ -312,7 +320,7 @@ import { constObjConfig } from "./config";
         }
 
         /* Appropriately fix new navdrop's for new menus on mobile view. */
-        #navdrop_meetdr {
+        #navdrop_fordoctors {
             display: none;
 	        width: 100%;
         }

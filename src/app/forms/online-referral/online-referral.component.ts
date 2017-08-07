@@ -5,6 +5,7 @@ import { Component, Inject } from '@angular/core';
 import { Router } from "@angular/router";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { constObjConfig } from "../../shared/config";
+import { SeoService } from "../../shared/seo.service";
 import { OnlineReferralService } from "./online-referral.service";
 
 import { User } from "./user.interface";
@@ -92,7 +93,7 @@ export class OnlineReferralComponent {
     objUserDetails;
     strGoogleResponse: string;
     
-    constructor(private onlineReferralService: OnlineReferralService, @Inject(FormBuilder) fb: FormBuilder, private router: Router) {
+    constructor(private onlineReferralService: OnlineReferralService, @Inject(FormBuilder) fb: FormBuilder, private router: Router, private seoService: SeoService) {
         this.strImages = constObjConfig.assets + "/images";
         this.strAssetLocation = constObjConfig.assets;
 
@@ -129,6 +130,10 @@ export class OnlineReferralComponent {
             isFacialTeethPain: [false],
             isDifficultySwallowing: [false]
         }) // this.fb.group()
+
+        // SEO
+        seoService.setTitle("Online Referral Form - TMJ & Sleep Therapy Centre of San Francisco");
+        seoService.setMetaDescription("Looking for a san francisco TMJ specialist or a sleep doctor? Our center offers neck, jaw and facial pain treatment and therapies in San Francisco's Bay area.");
     } // constructor
 
     // Send to REST endpoint.

@@ -22,6 +22,7 @@ import { CraniofacialComponent } from "./pages/services/craniofacial.component";
 import { FacialPainComponent } from "./pages/services/facial-pain.component";
 import { NeckJawComponent } from "./pages/services/neck-jaw.component";
 import { OrthodonticsComponent } from "./pages/services/orthodontics.component";
+import { ErrorNotFoundComponent } from "./pages/error-not-found.component";
 
 // Pages: Education
 import { TmjSymptomsComponent } from "./pages/education/tmj-symptoms.component";
@@ -40,7 +41,7 @@ export const AppRoutes: any = [
     // Forms
     { path: "online-referral", component: OnlineReferralComponent },
     { path: "appointment", component: AppointmentComponent },
-    { path: "meet-dr/rsvp", component: MeetDrRSVPComponent },
+    { path: "rsvp", component: MeetDrRSVPComponent },
     { path: "thank-you", component: ThankYouComponent },
 
     // Services
@@ -57,7 +58,11 @@ export const AppRoutes: any = [
 
     // Education
     { path: "tmj-symptoms", component: TmjSymptomsComponent },
-    { path: "sleep-apnea", component: SleepApneaComponent }
+    { path: "sleep-apnea", component: SleepApneaComponent },
+
+    // 404 Page
+    { path: "404", component: ErrorNotFoundComponent },
+    { path: "**", redirectTo: "/404" }
 ];
  
 export const AppComponents: any = [];

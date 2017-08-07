@@ -7,7 +7,7 @@ import {Observable} from "rxjs/Observable";
 import "rxjs/Rx"; // used for .map
 
 @Injectable()
-export class MeetDrRSVP {
+export class MeetDrRSVPService {
     private strPostUrl: string = "https://us-central1-leemtek-secure-forms.cloudfunctions.net/tmjsleeptherapycentre/rsvp";
     
     constructor(private http: Http) {}

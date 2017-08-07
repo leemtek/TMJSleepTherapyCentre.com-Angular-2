@@ -63,8 +63,7 @@ import { SeoService } from "../shared/seo.service";
             </div>
         </section><!-- /wrapper -->
     `,
-    styles: [``],
-    providers: [SeoService]
+    styles: [``]
 })
 export class ContactComponent {
     strAssetLocation: string;
@@ -76,5 +75,6 @@ export class ContactComponent {
 
         // SEO
         seoService.setTitle("Contact - TMJ & Sleep Therapy Centre of San Francisco");
+        seoService.setMetaDescription("Contact us today at 844-TMJ-9111 or email us at info@tmjsleeptherapycentre.com");
     } // constructor
 } // AppComponent

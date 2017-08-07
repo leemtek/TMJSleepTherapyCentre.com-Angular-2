@@ -93,8 +93,7 @@ import { SeoService } from "../../shared/seo.service";
             </div>
         </section><!-- /wrapper -->
     `,
-    styles: [``],
-    providers: [SeoService]
+    styles: [``]
 })
 export class SleepApneaComponent {
     strAssetLocation: string;
@@ -106,5 +105,6 @@ export class SleepApneaComponent {
 
         // SEO
         seoService.setTitle("Sleep Apnea - TMJ & Sleep Therapy Centre of San Francisco");
+        seoService.setMetaDescription("Looking for a san francisco TMJ specialist or a sleep doctor? Our center offers neck, jaw and facial pain treatment and therapies in San Francisco's Bay area.");
     } // constructor
 } // AppComponent

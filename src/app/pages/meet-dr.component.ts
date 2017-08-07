@@ -43,8 +43,7 @@ import { SeoService } from "../shared/seo.service";
             </div><!-- /maincontent -->
         </section><!-- /wrapper -->
     `,
-    styles: [``],
-    providers: [SeoService]
+    styles: [``]
 })
 export class MeetDrComponent {
     strAssetLocation: string;
@@ -56,5 +55,6 @@ export class MeetDrComponent {
 
         // SEO
         seoService.setTitle("Meet Dr. Alkhoury - TMJ & Sleep Therapy Centre of San Francisco");
+        seoService.setMetaDescription("Dr. Jamil Alkhoury, is a graduate of the University of California, San Francisco (UCSF) with a degree in Advanced Education in General Dentistry.");
     } // constructor
 } // AppComponent

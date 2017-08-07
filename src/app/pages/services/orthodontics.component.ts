@@ -116,8 +116,7 @@ import { SeoService } from "../../shared/seo.service";
         img.scaled {
             width: 100%;
         }
-    `],
-    providers: [SeoService]
+    `]
 })
 export class OrthodonticsComponent {
     strAssetLocation: string;
@@ -129,5 +128,6 @@ export class OrthodonticsComponent {
 
         // SEO
         seoService.setTitle("Orthodontics - TMJ & Sleep Therapy Centre of San Francisco");
+        seoService.setMetaDescription("Looking for a san francisco TMJ specialist or a sleep doctor? Our center offers neck, jaw and facial pain treatment and therapies in San Francisco's Bay area.");
     } // constructor
 } // AppComponent

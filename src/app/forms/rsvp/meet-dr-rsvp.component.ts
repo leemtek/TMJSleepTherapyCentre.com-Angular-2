@@ -5,7 +5,8 @@ import { Component, Inject } from '@angular/core';
 import { Router } from "@angular/router";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { constObjConfig } from "../../shared/config";
-import { MeetDrRSVP } from "./meet-dr-rsvp.service";
+import { SeoService } from "../../shared/seo.service";
+import { MeetDrRSVPService } from "./meet-dr-rsvp.service";
 
 import { User } from "./user.interface";
 
@@ -66,7 +67,7 @@ declare var $:any;
         </section><!-- /wrapper -->
     `,
     styles: [``],
-    providers: [MeetDrRSVP]
+    providers: [MeetDrRSVPService]
 })
 export class MeetDrRSVPComponent {
     form: FormGroup;
@@ -76,7 +77,7 @@ export class MeetDrRSVPComponent {
     objUserDetails;
     strGoogleResponse: string;
     
-    constructor(private appointmentService: MeetDrRSVP, @Inject(FormBuilder) fb: FormBuilder, private router: Router) {
+    constructor(private meetDrRSVPService: MeetDrRSVPService, @Inject(FormBuilder) fb: FormBuilder, private router: Router, private seoService: SeoService) {
         this.strImages = constObjConfig.assets + "/images";
         this.strAssetLocation = constObjConfig.assets;
 
@@ -89,6 +90,10 @@ export class MeetDrRSVPComponent {
             strPhone: [null, Validators.required],
             strEmail: [""]
         }) // this.form
+
+        // SEO
+        seoService.setTitle("RSVP - TMJ & Sleep Therapy Centre of San Francisco");
+        seoService.setMetaDescription("Looking for a san francisco TMJ specialist or a sleep doctor? Our center offers neck, jaw and facial pain treatment and therapies in San Francisco's Bay area.");
     } // constructor
 
     // Send to REST endpoint.
@@ -105,7 +110,7 @@ export class MeetDrRSVPComponent {
 
         // console.log(this.objUserDetails);
 
-        this.appointmentService.mdSendData(this.objUserDetails)
+        this.meetDrRSVPService.mdSendData(this.objUserDetails)
             .subscribe(data => {
                 if (data.status === "sent") {
                     // Success
