@@ -10,7 +10,7 @@ import { constObjConfig } from "./config";
         <header>
             <div class="header-bar">
                 <div class="restrict">
-                    <p><span>Call Today:</span> <a style="color:white;" href="tel:8448659111">(844) 865-9111</a> - <a style="color:white;" href="tel:4152267274">(415) 226-7274</a></p>
+                    <p><span class="space-left-10">Call Today: <a style="color:white;" href="tel:8448659111">(844) 865-9111</a></span> <span class="space-left-10">|</span> <span class="space-left-10"><a style="color:white;" href="tel:4152267274">(415) 226-7274</a></span> <span class="space-left-10">|</span> <span class="space-left-10"><a class="color-white" routerLink="/contact">Contact Us</a></span></p>
                 </div>
             </div>
 

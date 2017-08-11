@@ -10,6 +10,19 @@
 /* ----------------------------------------------------
     Common
 ---------------------------------------------------- */
+h2.default-h2 {
+    font-weight: bold !important;
+    font-size: 16px !important;
+    color: #000;
+    margin: 0px;
+    text-transform: none;
+    font-family: inherit;
+    text-align: inherit;
+}
+
+.color-white { color: #fff; }
+
+.space-top-10 { padding-top: 10px; }
 .space-top-20 { padding-top: 20px; }
 .space-top-30 { padding-top: 30px; }
 .space-top-40 { padding-top: 40px; }
@@ -17,7 +30,11 @@
 .space-bottom-10 { padding-bottom: 10px; }
 .space-bottom-20 { padding-bottom: 20px; }
 .space-bottom-40 { padding-bottom: 40px; }
+.space-left-10 { padding-left: 10px; }
 
+.width-90p { width: 90%; }
 .width-100p { width: 100%; height: auto; }
+
+.height-100 { height: 100px; }
 
 .underline { text-decoration: underline; }
