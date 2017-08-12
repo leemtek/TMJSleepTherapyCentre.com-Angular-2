@@ -60,9 +60,37 @@ export const AppRoutes: any = [
     { path: "tmj-symptoms", component: TmjSymptomsComponent },
     { path: "sleep-apnea", component: SleepApneaComponent },
 
+    // Legacy URLs routed to their appropriate route.
+    { path: "meet-dr.php", redirectTo: "/meet-dr" },
+    { path: "craniofacial.php", redirectTo: "/craniofacial" },
+    { path: "orthodontics.php", redirectTo: "/orthodontics" },
+    { path: "appointment.php", redirectTo: "/appointment" },
+    { path: "tmj.php", redirectTo: "/tmj" },
+    { path: "testimonials.php", redirectTo: "/testimonials" },
+    { path: "contact.php", redirectTo: "/contact" },
+    { path: "locations.php", redirectTo: "/locations" },
+    { path: "sleep-apnea.php", redirectTo: "/sleep-apnea" },
+    { path: "tmj-symptoms.php", redirectTo: "/tmj-symptoms" },
+    { path: "online-referral.php", redirectTo: "/online-referral" },
+    { path: "facial-pain.php", redirectTo: "/facial-pain" },
+    { path: "referral-form.php", redirectTo: "/referral-form" },
+    { path: "sleep-disorders.php", redirectTo: "/sleep-disorders" },
+    { path: "neck-jaw.php", redirectTo: "/neck-jaw" },
+    { path: "new-patients.php", redirectTo: "/new-patients" },
+    { path: "sleep-disorders-children.php", redirectTo: "/sleep-disorders-children" },
+    { path: "tmj-symptoms-children.php", redirectTo: "/tmj-symptoms-children" },
+    { path: "tmj-treatment-adult.php", redirectTo: "/tmj-treatment-adult" },
+    { path: "tmj-treatment-children.php", redirectTo: "/tmj-treatment-children" },
+    { path: "thankyou.php", redirectTo: "/thank-you" },
+
+    // Unknown pages?
+    { path: "tmj-sleep-therapy", redirectTo: "/" },
+    { path: "faq.php", redirectTo: "/" },
+    { path: "meet-team.php", redirectTo: "/" },
+
     // 404 Page
-    { path: "404", component: ErrorNotFoundComponent },
-    { path: "**", redirectTo: "/404" }
+    // { path: "404", component: ErrorNotFoundComponent },
+    { path: "**", redirectTo: "/" }
 ];
  
 export const AppComponents: any = [];
