@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {Router, Event, NavigationEnd} from '@angular/router';
 
+// Google Analytics FN
+declare let ga:Function;
+
 @Component({
     selector: 'app-root',
     template: `
@@ -31,7 +34,17 @@ import {Router, Event, NavigationEnd} from '@angular/router';
     providers: []
 })
 export class AppComponent implements OnInit {
-    constructor(private router:Router) { }
+    constructor(private router:Router) {
+        this.router.events.subscribe(
+            (event:Event) => {
+                // Google Analytics
+                if (event instanceof NavigationEnd) {
+                    ga('set', 'page', event.urlAfterRedirects);
+                    ga('send', 'pageview');
+                } // if
+            }
+        ); // this.router.events.subscribe
+    } // constructor(public router:Router)
 
     ngOnInit() {
         this.router.events.subscribe(
@@ -43,5 +56,5 @@ export class AppComponent implements OnInit {
                 window.scrollTo(0, 0)
             }
         ); // this.router.events.subscribe
-    }
+    } // ngOnInit()
 } // AppComponent
