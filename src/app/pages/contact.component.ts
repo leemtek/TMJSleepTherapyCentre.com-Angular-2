@@ -104,6 +104,8 @@ export interface User {
                 </div>
             </div>
         </section><!-- /wrapper -->
+        
+        <div [innerHtml]="jsonld"></div>
     `,
     styles: [`
         .border-color-red { border-color: red; }
@@ -113,6 +115,7 @@ export class ContactComponent {
     form: FormGroup;
 
     private strPostUrl: string = "https://us-central1-leemtek-secure-forms.cloudfunctions.net/tmjsleeptherapycentre/contact";
+    jsonld: string;
     strAssetLocation: string;
     strImages: string;
     objUserDetails;
@@ -125,6 +128,7 @@ export class ContactComponent {
         // SEO
         seoService.setTitle("Contact - TMJ & Sleep Therapy Centre of San Francisco");
         seoService.setMetaDescription("Contact us today at 844-TMJ-9111 or email us at info@tmjsleeptherapycentre.com");
+        this.jsonld = seoService.getDefaultJsonldData();
 
         // Form Details
         this.form = fb.group({
