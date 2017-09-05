@@ -12,6 +12,9 @@ export class SeoService {
         private sanitizer: DomSanitizer
     ) {}
 
+    /* ========================================================
+        Your usual SEO related info.
+    ======================================================== */
     public setTitle(strTitle: string) {
         this.titleService.setTitle(strTitle);
     } // setTitle()
@@ -25,6 +28,10 @@ export class SeoService {
     /* ========================================================
         JSON-LD
     ======================================================== */
+    /**
+     * Default JSON-LD that tells visitors the contact info of TMJ.
+     * @return {string} The <script> output with JSON-LD
+     */
     public getDefaultJsonldData() {
         let strHTML, jsonld;
 

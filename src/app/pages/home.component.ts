@@ -108,13 +108,10 @@ import { SeoService } from "../shared/seo.service";
 
             </div><!-- /maincontent -->
         </section><!-- /wrapper -->
-        
-        <div [innerHtml]="jsonld"></div>
     `,
     styles: [``]
 })
 export class HomeComponent {
-    jsonld: string;
     strAssetLocation: string;
     strImages: string;
     
@@ -125,6 +122,6 @@ export class HomeComponent {
         // SEO
         seoService.setTitle("TMJ & Sleep Therapy Centre of San Francisco");
         seoService.setMetaDescription("Looking for a san francisco TMJ specialist or a sleep doctor? Our center offers neck, jaw and facial pain treatment and therapies in San Francisco's Bay area.");
-        this.jsonld = seoService.getDefaultJsonldData();
+        // this.jsonld = seoService.getDefaultJsonldData();
     } // constructor
 } // AppComponent
