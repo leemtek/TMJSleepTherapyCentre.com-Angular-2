@@ -9,16 +9,27 @@
         "persistent": false
     },
     "short_name": "TMJ",
-    "homepage_url": "https://tmjsleeptherapycentre.com",  
+    "homepage_url": "https://tmjsleeptherapycentre.com",
+    "start_url": "./?utm_source=web_app_manifest",  
     "icons": [  
       {  
         "src": "./assets/images/andoid-icon-192x192.png",  
         "sizes": "192x192",  
         "type": "image/png"  
+      },
+      {  
+        "src": "./assets/images/andoid-icon-256x256.png",  
+        "sizes": "256x256",  
+        "type": "image/png"  
       },  
       {  
-        "src": "./assets/images/ms-icon-310x310",  
+        "src": "./assets/images/ms-icon-310x310.png",  
         "sizes": "384x384",  
+        "type": "image/png"  
+      },
+      {  
+        "src": "./assets/images/andoid-icon-512x512.png",  
+        "sizes": "512x512",  
         "type": "image/png"  
       }
     ],  
