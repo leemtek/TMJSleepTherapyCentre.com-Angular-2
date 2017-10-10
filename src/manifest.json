@@ -1,0 +1,48 @@
+{  
+    // Required
+    "manifest_version": 2,
+    "name": "TMJ & Sleep Therapy Center of San Francisco",
+    "version": "V 2.0.1",
+
+    // Recommended
+    "default_locale": "en",
+    "description": "Breathe, Sleep, Heal and Live",
+    //"icons": {...},
+    
+    // Optional
+    "author": "Duane Leem",
+    "background": {
+        // Recommended
+        "persistent": false
+    },
+
+    "short_name": "TMJ",
+    "homepage_url": "https://tmjsleeptherapycentre.com",  
+    //"start_url": "./?utm_source=web_app_manifest",  
+    "icons": [  
+      {  
+        "src": "./assets/images/andoid-icon-192x192.png",  
+        "sizes": "192x192",  
+        "type": "image/png"  
+      },  /*
+      {  
+        "src": "/images/icon-256x256.png",  
+        "sizes": "256x256",  
+        "type": "image/png"  
+      },*/  
+      {  
+        "src": "./assets/images/ms-icon-310x310",  
+        "sizes": "384x384",  
+        "type": "image/png"  
+      }/*,  
+      {  
+        "src": "/images/icon-512x512.png",  
+        "sizes": "512x512",  
+        "type": "image/png"  
+      }*/
+    ],  
+    "background_color": "#357775",
+    "theme_color": "#357775", 
+    "display": "standalone",  
+    "orientation": "portrait"  
+  }
