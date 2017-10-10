@@ -14,8 +14,6 @@ Green: #4a9391
 	z-index: 0;
 }
 
-html {
-}
 
 body {
 	background: url("https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/big-bg.png");
@@ -45,9 +43,6 @@ a:active {
 
 }
 
-.calluna {
-}
-
 #wrapper {
 	background: white;
 	border: 1px solid black;
@@ -62,12 +57,6 @@ a:active {
 	max-width: 1200px;
 	width: 85%;
 }
-
-/* Outside Structure Styles. */
-#outsidestructure {
-}
-/* End Outside Structure Styles. */
-
 
 /* Header Styles. */
 header {
