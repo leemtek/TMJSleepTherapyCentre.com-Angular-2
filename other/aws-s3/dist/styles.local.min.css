@@ -1,0 +1,43 @@
+@charset "utf-8";*{margin:0;padding:0;z-index:0}body{background:url("https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/big-bg.png");background-size:100%;background-repeat:no-repeat;list-style:none;font-family:Century Gothic,sans-serif}
+article,section,aside,hgroup,nav,header,footer,figure,figcaption{display:block}a:link,a:visited,a:hover,a:active{text-decoration:none}
+#wrapper{background:white;border:1px solid black;padding:20px;margin:20px auto;width:85%;max-width:1158px}
+.restrict{margin:0 auto;max-width:1200px;width:85%}header{width:100%}.header-bar{background:#357775;height:50px;width:100%}
+.header-bar p{text-align:right;color:white;line-height:50px;font-family:trajan pro}
+.header-bar p span{font-size:14px}.headerPlacer{width:100%;margin:0 auto}.person-picture{display:block;width:100%}
+.head-btns{position:absolute;margin-top:9%;margin-left:200px;width:21%;z-index:99999}
+.head-btns img{width:100%;max-width:270px;display:block;margin-top:5px;border:none !important}
+.headerSizer{width:90%;text-align:center;margin:0 5% 0 5%}.bx-wrapper .bx-pager{display:none}
+.bx-wrapper .bx-viewport{-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;border:0;left:-5px;background:0;-webkit-transform:translatez(0);-moz-transform:translatez(0);-ms-transform:translatez(0);-o-transform:translatez(0);transform:translatez(0)}
+nav{margin-top:-60px;background:#357775;padding:5px 0;list-style:none;position:relative;display:block;width:100%;margin:0 auto}
+#mobnav{display:none}.mainNavCon{width:100%;text-align:center;margin:-25px 0 0 0;padding:0 0 15px 0}
+.mainNav{color:#fff;font-family:Trajan Pro;padding:5px 10px 5px 10px;text-align:center}
+.mainNav:hover{color:#f17a24}.section{clear:both;margin:50px 0 0 0}.col{display:block;float:left;margin:1% 0 1% 1%}
+.col:first-child{margin-left:0}.group:before,.group:after{content:"";display:table}
+.group:after{clear:both}.group{zoom:1}.g12{width:100%}.g11{width:91.5%}.g10{width:83%}
+.g9{width:74.5%}.g8{width:66%}.g7{width:57.5%}.g6{width:49%}.g5{width:40.5%}.g4{width:32%}
+.g3{width:23.5%}.g2{width:15%}.g1{width:6.5%}.imgright{width:330px;float:right;margin:0 10% 0 10%}
+.conCon{padding:50px 0 50px 0}.pContent{font-size:16px;text-align:justify;padding:0 0 50px 0}
+.pContent a{color:#c85b0c;font-size:16px;text-align:justify;padding:0 0 50px 0}.videoContainer{width:100%;overflow:overlay}
+.videoContainer:last-child{margin-top:250px}video{width:33%;float:left;height:auto}
+.vidConMain{text-align:center;width:100%;padding:50px 0 50px 0}.vidCon{width:100%;height:auto;margin:10px 0 0 0}
+.vidCon:first-child{margin:0 0 10px 0}.vidsizer{margin:0 10% 0 10%}.buttonSizer{width:45%;margin:0 0 2% 2%}
+.firstButton{margin:0}input[type="text"]#du6axAQu{display:none}
+.submitForm{color:#fff;width:100px;height:45px;background:#f17a24;border:0}.boldTxt{font-weight:bold}
+footer{width:100%;margin:0 auto;min-height:400px;background:#357775}.footerPlacer{width:85%;margin:0 auto}
+.footSpacer{padding:30px 0 0 0}.mainform{margin:0 0 40px 0}button{color:#fff;width:100px;height:45px;background:#f17a24;border:0}
+.form{width:100%;height:35px;border:solid 1px #bdbdbd;box-sizing:content-box}.form2{width:100%;height:135px}
+select{height:45px;width:25%;margin-bottom:20px}.socialContainer{text-align:center}
+.socialIcon{font-size:34px;color:#fff;padding:0 0 0 10%;width:40px;height:40px;line-height:40px}
+.socialIcon:first-child{padding:0}.footerAdd{text-align:center;margin:60px 0 0 0;color:#fff}
+.footerPhone{text-align:center;margin:40px 0 0 0;font-family:Trajan Pro;color:#fff}
+.fphone{font-size:28px}#intmap{margin:0 0 40px 0}#copyright{width:100%;text-align:center;padding-top:20px;margin:0 auto;font-size:10px;color:#000}
+#copyright a{color:#000}h1{font-family:Trajan Pro;font-size:28px;color:#000;font-weight:normal}
+h2{color:#f17a24;text-transform:uppercase;font-size:20px;text-align:center;font-family:Trajan Pro,serif;margin:0 0 30px 0;font-weight:normal}
+h3{color:#f17a24;font-size:15px;margin:0 0 20px 0;font-style:italic;font-weight:normal;font-stretch:semi-condensed}
+#content ul{margin-top:0}#content li{margin-left:30px}.tmjVideo{width:100%;max-height:250px;background:black}
+.tmjMedia{float:right;margin-left:20px;width:442px;margin:0 auto;display:block;padding:0 0 20px 40px}
+.tmjMedia img{float:right;margin-left:40px}.homeVideo{width:80%;max-height:170px;height:auto !important;background:black;margin:0 10% 0 10%}
+.fullVideo{width:31.333%}.testVideo{max-height:170px;width:100%;height:auto !important}
+@media(min-width:927px){nav ul li a{padding:5px 16px !important}}.careCreditDiv{max-width:710px;margin:0 auto;width:100%;text-align:center}
+.careCreditBox{display:inline-block;vertical-align:middle;width:49%}.careCreditBox img{width:100%}
+.cCFullWidth{width:100% !important}.text-center{text-align:center}
