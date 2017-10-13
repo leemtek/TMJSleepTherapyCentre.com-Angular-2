@@ -528,3 +528,77 @@ margin: 0px 10% 0px 10%;
 	Common
 ================================================= */
 .text-center { text-align: center; }
+/* =================================================
+	CSS Query mode
+================================================= */
+@media screen and (max-width: 480px) {
+	/*@charset "utf-8";*/
+	/* 480px Viewport CSS Document */
+	/*
+	#wrapper {
+		width: 90%;
+	}
+	*/
+	/* Content Styles. */
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+	
+	.g12 {
+		width: 100%;
+	}
+	
+	.g11 {
+		width: 100%;
+	}
+	
+	.g10 {
+		width: 100%;
+	}
+	
+	.g9 {
+		width: 100%;
+	}
+	
+	.g8 {
+		width: 100%;
+	}
+	
+	.g7 {
+		width: 100%;
+	}
+	
+	.g6 {
+		width: 100%;
+	}
+	
+	.g5 {
+		width: 100%;
+	}
+	
+	.g4 {
+		width: 100%;
+	}
+	
+	.g3 {
+		width: 100%;
+	}
+	
+	.g2 {
+		width: 100%;
+	}
+	
+	.g1 {
+		width: 100%;
+	}
+	/* End Content Styles. */
+	
+	.header-bar p {
+		text-align: center;
+		font-size: 10px;
+	}
+	
+	.header-bar p span {
+		font-size: 10px;
+	}
+}

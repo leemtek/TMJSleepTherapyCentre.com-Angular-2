@@ -9,7 +9,6 @@
         "persistent": false
     },
     "short_name": "TMJ",
-    "homepage_url": "https://tmjsleeptherapycentre.com",
     "start_url": "./?utm_source=web_app_manifest",  
     "icons": [  
       {  
