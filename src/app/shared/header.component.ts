@@ -249,6 +249,7 @@ import { constObjConfig } from "./config";
                 list-style: none;
                 position: relative;
                 width: 100%;
+                height: auto;
                 margin: 0 auto;
                 display: block;
                 max-width: 760px;
@@ -322,7 +323,8 @@ import { constObjConfig } from "./config";
         /* Appropriately fix new navdrop's for new menus on mobile view. */
         #navdrop_fordoctors {
             display: none;
-	        width: 100%;
+            width: 100%;
+            height: auto;
         }
     `],
     providers: []
