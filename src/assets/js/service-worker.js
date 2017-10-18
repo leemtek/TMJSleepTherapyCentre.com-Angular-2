@@ -3,10 +3,7 @@ var cacheName = 'v1';
 
 // Default files to always cache
 var cacheFiles = [
-    '/',
-    '/assets/styles/site.css',
-    '/assets/js/leemtek.js',
-    '/assets/js/snapengage.js'
+    '/'
 ]
 
 
