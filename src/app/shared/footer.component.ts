@@ -17,9 +17,9 @@ import { constObjConfig } from "./config";
                     <h2>Connect</h2>
 
                     <p class="socialContainer">
-                        <a href="http://www.tmjsleeptherapycentre.com/tmj-sleep-therapy/" target="_blank" class="socialIcon"><i class="fa fa-wordpress"></i></a>
-                        <a href="https://www.facebook.com/tmjsleeptherapy" target="_blank" class="socialIcon"><i class="fa fa-facebook"></i></a>
-                        <a href="https://plus.google.com/b/111000753015323874687/111000753015323874687/about" target="_blank" class="socialIcon"><i class="fa fa-google-plus"></i></a>
+                        <a href="http://www.tmjsleeptherapycentre.com/tmj-sleep-therapy/" target="_blank" rel="noopener" class="socialIcon"><i class="fa fa-wordpress"></i></a>
+                        <a href="https://www.facebook.com/tmjsleeptherapy" target="_blank" rel="noopener" class="socialIcon"><i class="fa fa-facebook"></i></a>
+                        <a href="https://plus.google.com/b/111000753015323874687/111000753015323874687/about" target="_blank" rel="noopener" class="socialIcon"><i class="fa fa-google-plus"></i></a>
                     </p>
 
                     <p class="footerAdd">
@@ -36,11 +36,11 @@ import { constObjConfig } from "./config";
                         </span>
                     </p>
                     <p id="copyright">
-                        Copyright &copy; TMJ &amp; Sleep Therapy Centre - <a href="pdfs/Privacy Practices.pdf" target="_blank">Privacy Practice</a><br />
-                        Web Programming by <a href="https://duaneleem.com" target="_blank">LeemTek</a> | 
+                        Copyright &copy; TMJ &amp; Sleep Therapy Centre - <a href="pdfs/Privacy Practices.pdf" target="_blank" rel="noopener">Privacy Practice</a><br />
+                        Web Programming by <a href="https://duaneleem.com" target="_blank" rel="noopener">LeemTek</a> | 
                         
                         <!-- <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/images/icon-hcwi.png" alt="Healthcare Web Image logo" width="16" height="15" border="0" /> -->
-                        Website Design by <a href="http://www.healthcarewebimage.com" target="_blank" id="copyright">HCWI</a>
+                        Website Design by <a href="http://www.healthcarewebimage.com" target="_blank" rel="noopener" id="copyright">HCWI</a>
                     </p>
                 </div><!-- /col -->
 

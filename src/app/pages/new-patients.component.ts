@@ -17,9 +17,9 @@ import { SeoService } from "../shared/seo.service";
                             </p>
                         </div>
                         <div class="col g4">
-                            <a href="https://leemtek-secure-forms.firebaseapp.com/tmjsleeptherapycentre/new-patient" target="_blank"><img src="{{ strImages }}/online-form-button.png" width="100%" alt="Online Form Submission" /></a>
+                            <a href="https://leemtek-secure-forms.firebaseapp.com/tmjsleeptherapycentre/new-patient" target="_blank" rel="noopener"><img src="{{ strImages }}/online-form-button.png" width="100%" alt="Online Form Submission" /></a>
                             <br>
-                            <a href="{{ strAssetLocation }}/pdfs/PATIENT-QUESTIONNAIRE.pdf" target="_blank"><img src="{{ strImages }}/downloadable-patient-form.png" width="100%" alt="Patient Form" /></a>
+                            <a href="{{ strAssetLocation }}/pdfs/PATIENT-QUESTIONNAIRE.pdf" target="_blank" rel="noopener"><img src="{{ strImages }}/downloadable-patient-form.png" width="100%" alt="Patient Form" /></a>
                         </div>
                     </div>
                 </div>
