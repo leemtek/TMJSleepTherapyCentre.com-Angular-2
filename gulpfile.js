@@ -55,7 +55,8 @@ gulp.task("styles-remote", function() {
 gulp.task("scripts-remote", function() {
     remoteSrc(
         [
-            "https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js",
+            // "https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js",
+            "https://code.jquery.com/jquery-3.2.1.js",
             "https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js",
             "https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/js/fastclick.js",
             "https://d1xrp9zhb3ks3c.cloudfront.net/web/tmjsleeptherapycentre/js/navigation.js",
