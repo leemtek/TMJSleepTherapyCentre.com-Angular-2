@@ -26,17 +26,17 @@ import { SeoService } from "../shared/seo.service";
 
                         <div class="col g12">
                             <a routerLink="/tmj">
-                                <img src="{{ strImages }}/btn-1.png" alt="Button Images" class="buttonSizer ">
+                                <img src="{{ strImages }}/btn-1.png" alt="Button Images">
                             </a>
                             <a routerLink="/sleep-disorders">
-                                <img src="{{ strImages }}/btn-2.png" alt="Button Images" class="buttonSizer ">
+                                <img src="{{ strImages }}/btn-2.png" alt="Button Images">
                             </a>
                             <br />
                             <a routerLink="new-patients">
-                                <img src="{{ strImages }}/btn-3.png" alt="Button Images" class="buttonSizer">
+                                <img src="{{ strImages }}/btn-3.png" alt="Button Images">
                             </a>
                             <a routerLink="appointment">
-                                <img src="{{ strImages }}/btn-4.png" alt="Button Images" class="buttonSizer ">
+                                <img src="{{ strImages }}/btn-4.png" alt="Button Images">
                             </a>
                         </div>
 
